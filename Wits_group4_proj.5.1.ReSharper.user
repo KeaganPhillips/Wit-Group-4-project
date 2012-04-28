@@ -1,0 +1,44 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Controllers/f:HomeController.cs" caret="320" fromTop="15" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/f:packages.config" caret="0" fromTop="0" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/f:Global.asax.cs" caret="743" fromTop="24" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="134" fromTop="5" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/f:_ViewStart.cshtml" caret="0" fromTop="0" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Scripts/f:underscore-min.js" caret="12186" fromTop="50" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Scripts/f:json2.js" caret="17353" fromTop="25" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Scripts/f:backbone-min.js" caret="13834" fromTop="25" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="792" fromTop="14" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/f:ClassDiagram.coffee" caret="48" fromTop="1" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="134" fromTop="5" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/f:ClassDiagram.coffee" caret="48" fromTop="1" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Scripts/f:underscore-min.js" caret="0" fromTop="0" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Scripts/f:underscore-min.js" caret="12186" fromTop="50" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Scripts/f:json2.js" caret="17353" fromTop="25" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="185" fromTop="6" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Scripts/f:backbone-min.js" caret="13834" fromTop="25" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="442" fromTop="12" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="185" fromTop="5" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files\NUnit 2.5.7\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>
