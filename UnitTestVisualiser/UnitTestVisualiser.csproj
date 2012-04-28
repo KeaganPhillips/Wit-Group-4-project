@@ -77,6 +77,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\jqtree.css" />
     <Content Include="Content\themes\eggplant\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\eggplant\images\ui-bg_flat_0_eeeeee_40x100.png" />
     <Content Include="Content\themes\eggplant\images\ui-bg_flat_55_994d53_40x100.png" />
@@ -95,6 +96,7 @@
     <Content Include="Content\themes\eggplant\jquery-ui-1.8.19.custom.css" />
     <Content Include="Scripts\backbone-min.js" />
     <Content Include="Scripts\json2.js" />
+    <Content Include="Scripts\tree.jquery.js" />
     <Content Include="Scripts\underscore-min.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
