@@ -19,33 +19,46 @@
       <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Scripts/f:backbone-min.js" caret="0" fromTop="0" />
       <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="981" fromTop="18" />
       <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="604" fromTop="14" />
-      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:UnitTest1.cs" caret="216" fromTop="9" />
       <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:Account.cs" caret="125" fromTop="7" />
-      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:AtmCard.cs" caret="125" fromTop="7" />
-      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:Customer.cs" caret="146" fromTop="8" />
-      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/d:Interfaces/f:IAtmMachine.cs" caret="54" fromTop="2" />
-      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:AtmMachine.cs" caret="168" fromTop="7" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/d:Interfaces/f:IAtmCard.cs" caret="91" fromTop="4" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/d:Interfaces/f:ICustomer.cs" caret="94" fromTop="4" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/d:Interfaces/f:IAtmMachine.cs" caret="246" fromTop="8" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:AtmMachine.cs" caret="806" fromTop="17" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:AtmCard.cs" caret="188" fromTop="9" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:Customer.cs" caret="285" fromTop="15" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="2393" fromTop="10" />
     </RecentFiles>
     <RecentEdits>
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/f:ClassDiagram.coffee" caret="48" fromTop="1" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Scripts/f:underscore-min.js" caret="0" fromTop="0" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Scripts/f:underscore-min.js" caret="12186" fromTop="50" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Scripts/f:json2.js" caret="17353" fromTop="25" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="185" fromTop="6" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Scripts/f:backbone-min.js" caret="13834" fromTop="25" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="642" fromTop="15" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/f:Site.css" caret="1149" fromTop="30" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="112" fromTop="5" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/f:Site.css" caret="1091" fromTop="28" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="604" fromTop="14" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="925" fromTop="14" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="233" fromTop="6" />
-      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:Customer.cs" caret="147" fromTop="7" />
-      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:AtmMachine.cs" caret="183" fromTop="11" />
       <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:Account.cs" caret="144" fromTop="7" />
-      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:AtmCard.cs" caret="125" fromTop="7" />
-      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/d:Interfaces/f:IAtmMachine.cs" caret="71" fromTop="4" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="782" fromTop="18" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:Customer.cs" caret="282" fromTop="10" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:AtmCard.cs" caret="277" fromTop="10" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="507" fromTop="16" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="689" fromTop="22" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="1234" fromTop="27" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="1184" fromTop="22" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="1700" fromTop="34" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="917" fromTop="3" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="1372" fromTop="17" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:AtmMachine.cs" caret="411" fromTop="18" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:AtmMachine.cs" caret="682" fromTop="28" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="1771" fromTop="23" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="2067" fromTop="31" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:AtmMachine.cs" caret="900" fromTop="17" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="2239" fromTop="20" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:AtmMachine.cs" caret="579" fromTop="19" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="2270" fromTop="23" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="3239" fromTop="32" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="3174" fromTop="25" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/d:Interfaces/f:IAtmCard.cs" caret="91" fromTop="4" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="2846" fromTop="10" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/d:Interfaces/f:ICustomer.cs" caret="94" fromTop="4" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="3268" fromTop="19" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="3226" fromTop="19" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/d:Interfaces/f:IAtmMachine.cs" caret="246" fromTop="8" />
       <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:AtmMachine.cs" caret="155" fromTop="7" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:AtmCard.cs" caret="148" fromTop="7" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:Customer.cs" caret="150" fromTop="7" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -60,8 +73,43 @@
   </UnitTestRunnerNUnit>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="public" priority="0" />
+      <Item value="public" priority="3" />
       <Item value="interface" priority="0" />
+      <Item value="decimal" priority="0" />
+      <Item value="string" priority="2" />
+      <Item value="Assert`0" priority="2" />
+      <Item value="customer" priority="1" />
+      <Item value="new" priority="2" />
+      <Item value="Customer" priority="0" />
+      <Item value="atmMachine" priority="4" />
+      <Item value="AtmMachine" priority="0" />
+      <Item value="atmCard" priority="2" />
+      <Item value="AtmCard" priority="0" />
+      <Item value="void" priority="2" />
+      <Item value="TestMethod" priority="2" />
+      <Item value="return" priority="0" />
+      <Item value="private" priority="0" />
+      <Item value="bool" priority="1" />
+      <Item value="card" priority="0" />
+      <Item value="null" priority="1" />
+      <Item value="Exception`0" priority="0" />
+      <Item value="typeof" priority="0" />
+      <Item value="ApplicationException`0" priority="1" />
+      <Item value="get" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
+      <Item value="Fail`0" priority="0" />
+      <Item value="AreEqual`0" priority="0" />
+      <Item value="IsTrue`0" priority="1" />
+      <Item value="IsFalse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DemoApp.IAtmMachine">
+      <Item value="CheckBalance`0" priority="0" />
+      <Item value="InsertCard`0" priority="1" />
+      <Item value="EnterPin`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DemoApp.ICustomer">
+      <Item value="MySecretPin" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

@@ -45,6 +45,9 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\IGiven.cs" />
+    <Compile Include="Helpers\IWhen.cs" />
+    <Compile Include="Helpers\TestBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AtmMachineTest.cs" />
   </ItemGroup>
