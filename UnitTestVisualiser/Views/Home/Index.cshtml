@@ -4,76 +4,7 @@
 }
 
     <script>
-        window.onload = function () {
-            var stage = new Kinetic.Stage({
-                container: "container",
-                width: 1200,
-                height: 800
-            });
-
-            var classGroup = new Kinetic.Group({
-                draggable: true
-            });
-            classGroup.draggable(true);
-            var classLayer = new Kinetic.Layer();
-            var boxLayer = new Kinetic.Layer();
-            var rectX = stage.getWidth() / 2 - 50;
-            var rectY = stage.getHeight() / 2 - 25;
-
-            var box = new Kinetic.Rect({
-                x: rectX,
-                y: rectY,
-                width: 200,
-                height: 150,
-                cornerRadius: 5,
-                fill: "#00D2FF",
-                stroke: "black",
-                strokeWidth: 1
-            });
-
-
-            var complexText = new Kinetic.Text({
-                x: rectX,
-                y: rectY,
-                stroke: "green",
-                strokeWidth: 5,
-                fill: "#ddd",
-                text: "Complex Text",
-                fontSize: 10,
-                fontFamily: "Calibri",
-                textFill: "#888",
-                textStroke: "#444",
-                padding: 15,
-                align: "center",
-                verticalAlign: "middle",
-                fontStyle: "italic"
-            });
-
-
-            classGroup.on("mouseup", function () {
-                alert('Clicked!');
-            });
-
-            classGroup.add(box);
-            classGroup.add(complexText);
-
-            classLayer.add(classGroup);
-            stage.add(classLayer);
-
-            // write out drag and drop events
-            //box.on("dragstart", function () {
-            //    writeMessage(messageLayer, "dragstart");
-            //});
-            //box.on("dragend", function () {
-            //    writeMessage(messageLayer, "dragend");
-            //});
-
-            //boxLayer.add(box);
-
-            //stage.add(messageLayer);
-            //stage.add(boxLayer);
-        };
-
+  
     </script>
     
 
