@@ -19,13 +19,14 @@
     classLayer
 
   _get_method: =>
-    simpleText = new Kinetic.Text({
-          x: 21,
+    complexText = new Kinetic.Text({
+          x: 77,
           y: 60,
           text: "Public Methods",
           fontSize: 11,
           fontFamily: "Verdana",
           textStroke: "#333",
+          textFill: "#333",
           textStrokeWidth: 0.1,
           align: "center",
           verticalAlign: "middle"});
