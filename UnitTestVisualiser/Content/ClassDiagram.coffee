@@ -4,42 +4,72 @@
     @base_y = y
     @class_name = data.className
     @methods = data.methods
+    @current_y = @base_y
 
   get_Layer: =>
     @classGroup = new Kinetic.Group({draggable: true})
+    @classBody = new Kinetic.Group()
+
     classLayer = new Kinetic.Layer();
+    
     @classGroup.draggable(true)
+    @_render_methods()
+    props = @_publicProperties()
     box = @_create_box()
+   
     line = @_drawLine()
+    publicMethod = @_publicMethod()
+    
+
+
+    # add to parent group
     @classGroup.add(box);
     @classGroup.add(line);
-    @_render_methods()
-    publicMethod = @_publicMethod()
+    
     @classGroup.add(publicMethod)
+    @classGroup.add(props)
+    @classGroup.add(@classBody); 
 
     class_names = @_get_className()
     @classGroup.add(class_names)
 	
+
+    # register click event
+    @classGroup.on('mouseup', -> box.transitionTo({strokeWidth: 4, duration: 0.3, easing: 'ease-in-out'}))
     
     classLayer.add(@classGroup)
     classLayer
 
   _render_methods:() =>
-    current_y = @base_y
+    
     for method in @methods
       complexText = new Kinetic.Text({
           x: @base_x-17,
-          y: current_y,
+          y: @current_y,
           text: method.methodName,
-          fontSize: 11,
+          fontSize: 9,
           fontFamily: "Verdana",
           textStroke: "#333",
           textFill: "#333",
           textStrokeWidth: 0.1,
           align: "center",
           verticalAlign: "middle"});
-      @classGroup.add(complexText)
-      current_y = current_y + 20
+      @classBody.add(complexText)
+      @current_y = @current_y + 20
+
+  _publicProperties:() =>
+    ComplexText = new Kinetic.Text({
+         x: @base_x-15,
+         y: @current_y,
+         text: "Properties",
+         fontSize: 10,
+         fontStyle: "bold",
+         fontFamily: "Verdana",
+         textStroke: "#333",
+         textFill: "#333",
+         textStrokeWidth: 0.1,
+         align: "center",
+         verticalAlign: "middle"});
 
 
   _get_className: =>
@@ -61,7 +91,8 @@
          x: @base_x+2,
          y: @base_y-15,
          text: "Public Methods",
-         fontSize: 11,
+         fontSize: 10,
+         fontStyle: "bold",
          fontFamily: "Verdana",
          textStroke: "#333",
          textFill: "#333",
@@ -71,13 +102,15 @@
       
 
   _create_box: =>     
+    console.log("base_y: #{@base_y}")
+    console.log("current_y: #{@current_y}")
     rectX = @base_x - 57;
     rectY = @base_y - 55;
     box = new Kinetic.Rect({
                 x: rectX,
                 y: rectY,
                 width: 200,
-                height: 200,
+                height: 68  + (@current_y - @base_y),
                 cornerRadius: 5,
                 fill: "#ffffff",
                 stroke: "black",
@@ -98,6 +131,8 @@
                 lineCap: "round"
                 lineJoin: "round"
             });
+
+
 
 		
 
