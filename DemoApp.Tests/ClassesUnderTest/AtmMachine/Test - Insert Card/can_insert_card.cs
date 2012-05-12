@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using DemoApp.Tests.Helpers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using UnitTestReflector.Core;
 
 
 namespace DemoApp.Tests.ClassesUnderTest.AtmMachine.Test___Insert_Card
@@ -23,6 +23,12 @@ namespace DemoApp.Tests.ClassesUnderTest.AtmMachine.Test___Insert_Card
         }
 
         #region Scenario
+
+        public Type ClassUnderTest
+        {
+            get { return typeof(DemoApp.AtmMachine); }
+        }
+
         public string SecnarionDescription
         {
             get { return "Can insert card into the ATM"; }
