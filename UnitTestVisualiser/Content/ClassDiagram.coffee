@@ -11,8 +11,10 @@
     @classGroup.draggable(true)
     box = @_create_box()
     line = @_drawLine()
+    liness = @_drawLines()
     @classGroup.add(box);
     @classGroup.add(line);
+    @classGroup.add(liness);
     @_render_methods()
     publicMethod = @_publicMethod()
     @classGroup.add(publicMethod)
@@ -41,6 +43,21 @@
       @classGroup.add(complexText)
       current_y = current_y + 20
 
+  _drawLines: =>
+     points = [
+        x: @base_x - 57
+        y: @base_y + 70
+     ,
+        x: @base_x+143
+        y: @base_y + 70
+     ]
+     line = new Kinetic.Line({
+                points: points
+                stroke: "black"
+                strokeWidth: 1
+                lineCap: "round"
+                lineJoin: "round"
+           });
 
   _get_className: =>
     complexText = new Kinetic.Text({
@@ -98,6 +115,8 @@
                 lineCap: "round"
                 lineJoin: "round"
             });
+
+
 
 		
 
