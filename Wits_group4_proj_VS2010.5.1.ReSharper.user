@@ -7,8 +7,29 @@
     </boolean>
   </SettingsComponent>
   <RecentFiles>
-    <RecentFiles />
-    <RecentEdits />
+    <RecentFiles>
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Controllers/f:HomeController.cs" caret="112" fromTop="5" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:AtmMachine/d:Test - Check Balance/f:blance_0_for_new_account.cs" caret="372" fromTop="14" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:Helpers/f:TestHelper.cs" caret="0" fromTop="0" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:Helpers/f:IScenario.cs" caret="259" fromTop="10" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:Helpers/f:IGiven.cs" caret="0" fromTop="0" />
+      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:TestScenarion.cs" caret="0" fromTop="0" />
+      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:ClassUnderTest.cs" caret="0" fromTop="0" />
+      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:ClassTest.cs" caret="0" fromTop="0" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:AtmMachine/d:Test - Insert Card/f:can_insert_card.cs" caret="812" fromTop="23" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="2406" fromTop="34" />
+      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="1080" fromTop="28" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Controllers/f:HomeController.cs" caret="112" fromTop="5" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:AtmMachine/d:Test - Check Balance/f:blance_0_for_new_account.cs" caret="410" fromTop="14" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:AtmMachine/d:Test - Insert Card/f:can_insert_card.cs" caret="733" fromTop="19" />
+      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:TestScenarion.cs" caret="0" fromTop="0" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:Helpers/f:IScenario.cs" caret="50" fromTop="3" />
+      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="319" fromTop="13" />
+      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="1080" fromTop="31" />
+      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="910" fromTop="25" />
+    </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
     <NAntPath value="" />
@@ -20,4 +41,49 @@
     <NUnitInstallDir>C:\Program Files\NUnit 2.5.7\bin\net-2.0\</NUnitInstallDir>
     <UseAddins>Never</UseAddins>
   </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="Type`0" priority="0" />
+      <Item value="return" priority="2" />
+      <Item value="typeof" priority="1" />
+      <Item value="AtmMachine" priority="1" />
+      <Item value="DemoApp" priority="0" />
+      <Item value="AtmMachine`0" priority="0" />
+      <Item value="public" priority="0" />
+      <Item value="static" priority="0" />
+      <Item value="IList" priority="0" />
+      <Item value="ClassUnderTest`0" priority="2" />
+      <Item value="System" priority="0" />
+      <Item value="Reflection" priority="0" />
+      <Item value="Assembly`0" priority="0" />
+      <Item value="var" priority="0" />
+      <Item value="List" priority="0" />
+      <Item value="new" priority="2" />
+      <Item value="List&lt;ClassUnderTest&gt;" priority="0" />
+      <Item value="instances" priority="0" />
+      <Item value="lstClassesUnderTest" priority="2" />
+      <Item value="Get`0" priority="0" />
+      <Item value="ClassUnderTest" priority="0" />
+      <Item value="ClassName" priority="0" />
+      <Item value="scenario" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Reflection.Assembly">
+      <Item value="GetAssembly`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="FirstOrDefault`1" priority="0" />
+      <Item value="ToList`1" priority="0" />
+      <Item value="Aggregate`3" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="ForEach`0" priority="0" />
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:DemoApp.Tests.Helpers.IScenario">
+      <Item value="ClassUnderTest" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
 </Configuration>

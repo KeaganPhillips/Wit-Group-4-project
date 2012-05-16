@@ -2,11 +2,12 @@
   constructor: (x, y, data) ->
     @base_x = x
     @base_y = y
-    @class_name = data.className
-    @methods = data.methods
+    @class_name = data.ClassName
+    @methods = data.PublicMethods
     @current_y = @base_y
 
   get_Layer: =>
+    console.log 'in get_Layer'
     @classGroup = new Kinetic.Group({draggable: true})
     @classBody = new Kinetic.Group()
 
@@ -14,6 +15,7 @@
     
     @classGroup.draggable(true)
     @_render_methods()
+    console.log 'about to get props'
     props = @_publicProperties()
     box = @_create_box()
    
@@ -46,7 +48,7 @@
       complexText = new Kinetic.Text({
           x: @base_x-17,
           y: @current_y,
-          text: method.methodName,
+          text: method,
           fontSize: 9,
           fontFamily: "Verdana",
           textStroke: "#333",

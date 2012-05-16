@@ -10,8 +10,8 @@ namespace UnitTestReflector.Core
     {
         public string ClassName { get; set; }
         public string ClassDescription { get; set; }
-        public IList<MethodInfo> PublicMethods { get; set; }
-        public IList<PropertyInfo> PublicProperties { get; set; }
+        public IList<string> PublicMethods { get; set; }
+        public IList<string> PublicProperties { get; set; }
         public IList<ClassTest> Tests { get; set; }
     }
 }

@@ -176,8 +176,14 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Content\ClassDiagram.coffee" />
-    <None Include="Content\Window.coffee" />
+    <None Include="Content\Coffee\ClassDiagram.coffee" />
+    <None Include="Content\Coffee\Window.coffee" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnitTestReflector.Core\UnitTestReflector.Core.csproj">
+      <Project>{AA7CB2F3-A5B3-421D-B447-B8861EB502B3}</Project>
+      <Name>UnitTestReflector.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

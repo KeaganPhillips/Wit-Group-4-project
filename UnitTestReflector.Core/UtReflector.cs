@@ -17,20 +17,28 @@ namespace UnitTestReflector.Core
                                      && t.GetConstructor(Type.EmptyTypes) != null
                             select Activator.CreateInstance(t) as IScenario;
 
-            var lstClassesUnderTest = new List<ClassUnderTest>();
-            instances
-                .ToList()
-                .ForEach(x=> lstClassesUnderTest.Add(getClassUnderTest(x)));
 
+            return null;
+//                getUniqueClasses(instances.ToList()
+//                                     .ToList()
+//                                     .ForEach(x => lstClassesUnderTest.Add(getClassUnderTest(x))));
 
-            return lstClassesUnderTest;
         }
+
+
 
         private static ClassUnderTest getClassUnderTest(IScenario scenario)
         {
+            var methods = scenario
+                .ClassUnderTest
+                .GetMethods(BindingFlags.Public | BindingFlags.Instance)
+                .Where(m => !m.IsSpecialName)
+                .Select(x => x.Name);
+
             return  new ClassUnderTest()
                         {
-                            ClassName = scenario.ClassUnderTest.Name
+                            ClassName = scenario.ClassUnderTest.Name,
+                            PublicMethods = methods.ToList()
                         };
         }
     }
