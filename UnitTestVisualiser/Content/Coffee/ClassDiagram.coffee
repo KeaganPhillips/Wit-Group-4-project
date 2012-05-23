@@ -1,23 +1,24 @@
 ﻿class ClassDiagram
-  constructor: (x, y, data) ->
+  constructor: (x, y, data, fn_unselect) ->
+    @fn_unselect = fn_unselect
     @base_x = x
     @base_y = y
     @class_name = data.ClassName
     @methods = data.PublicMethods
     @current_y = @base_y
+    @props = data.PublicProperties
 
   get_Layer: =>
-    console.log 'in get_Layer'
     @classGroup = new Kinetic.Group({draggable: true})
     @classBody = new Kinetic.Group()
 
-    classLayer = new Kinetic.Layer();
+    @classLayer = new Kinetic.Layer();
     
     @classGroup.draggable(true)
     @_render_methods()
-    console.log 'about to get props'
     props = @_publicProperties()
-    box = @_create_box()
+    @_render_properties()
+    @box = @_create_box()
    
     line = @_drawLine()
     publicMethod = @_publicMethod()
@@ -25,7 +26,7 @@
 
 
     # add to parent group
-    @classGroup.add(box);
+    @classGroup.add(@box);
     @classGroup.add(line);
     
     @classGroup.add(publicMethod)
@@ -37,16 +38,30 @@
 	
 
     # register click event
-    @classGroup.on('mouseup', -> box.transitionTo({strokeWidth: 4, duration: 0.3, easing: 'ease-in-out'}))
+    @classGroup.on('mouseup', @Select )
     
-    classLayer.add(@classGroup)
-    classLayer
+    @classLayer.add(@classGroup)
+    @classLayer
+
+  Select: =>
+    @fn_unselect()
+    @box.setStroke("#aa3333");
+    @box.setStrokeWidth(5);
+    @classLayer.draw();
+    #@box.transitionTo({strokeWidth: 5, duration: 0.1})
+
+  UnSelect: =>
+    @box.setStroke("#000000");
+    @box.setStrokeWidth(1);
+    @classLayer.draw();
+
+    #@box.transitionTo({strokeWidth: 1, duration: 0.1})
 
   _render_methods:() =>
     
     for method in @methods
       complexText = new Kinetic.Text({
-          x: @base_x-17,
+          x: @base_x-40,
           y: @current_y,
           text: method,
           fontSize: 9,
@@ -54,7 +69,23 @@
           textStroke: "#333",
           textFill: "#333",
           textStrokeWidth: 0.1,
-          align: "center",
+          align: "left",
+          verticalAlign: "middle"});
+      @classBody.add(complexText)
+      @current_y = @current_y + 20
+
+  _render_properties:() =>
+    for property in @props
+      complexText = new Kinetic.Text({
+          x: @base_x-40,
+          y: @current_y+15,
+          text: property,
+          fontSize: 9,
+          fontFamily: "Verdana",
+          textStroke: "#333",
+          textFill: "#333",
+          textStrokeWidth: 0.1,
+          align: "left",
           verticalAlign: "middle"});
       @classBody.add(complexText)
       @current_y = @current_y + 20
@@ -104,8 +135,6 @@
       
 
   _create_box: =>     
-    console.log("base_y: #{@base_y}")
-    console.log("current_y: #{@current_y}")
     rectX = @base_x - 57;
     rectY = @base_y - 55;
     box = new Kinetic.Rect({
@@ -114,9 +143,11 @@
                 width: 200,
                 height: 68  + (@current_y - @base_y),
                 cornerRadius: 5,
-                fill: "#ffffff",
+                shadow:{color: "black",blur: 10,offset: [15, 15],alpha: 0.5}
+                fill: "#eeffee",
                 stroke: "black",
-                strokeWidth: 1
+                strokeWidth: 1,
+                
             });
    _drawLine: =>
      points = [

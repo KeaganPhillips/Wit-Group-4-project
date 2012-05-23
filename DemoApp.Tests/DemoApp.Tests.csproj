@@ -45,6 +45,7 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassesUnderTest\Account\Test - Credit Acc\can_credit_acc.cs" />
     <Compile Include="ClassesUnderTest\AtmMachine\Test - Check Balance\blance_0_for_new_account.cs" />
     <Compile Include="ClassesUnderTest\AtmMachine\Test - Insert Card\can_insert_card.cs" />
     <Compile Include="Helpers\TestNameAttribute.cs" />
