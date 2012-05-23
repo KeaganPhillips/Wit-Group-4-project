@@ -5,6 +5,7 @@
     @class_name = data.ClassName
     @methods = data.PublicMethods
     @current_y = @base_y
+    @props = data.PublicProperties
 
   get_Layer: =>
     console.log 'in get_Layer'
@@ -17,6 +18,7 @@
     @_render_methods()
     console.log 'about to get props'
     props = @_publicProperties()
+    @_render_properties()
     box = @_create_box()
    
     line = @_drawLine()
@@ -49,6 +51,22 @@
           x: @base_x-17,
           y: @current_y,
           text: method,
+          fontSize: 9,
+          fontFamily: "Verdana",
+          textStroke: "#333",
+          textFill: "#333",
+          textStrokeWidth: 0.1,
+          align: "center",
+          verticalAlign: "middle"});
+      @classBody.add(complexText)
+      @current_y = @current_y + 20
+
+  _render_properties:() =>
+    for property in @props
+      complexText = new Kinetic.Text({
+          x: @base_x-25,
+          y: @current_y+15,
+          text: property,
           fontSize: 9,
           fontFamily: "Verdana",
           textStroke: "#333",
