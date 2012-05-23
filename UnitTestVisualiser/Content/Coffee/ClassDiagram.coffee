@@ -16,7 +16,6 @@
     
     @classGroup.draggable(true)
     @_render_methods()
-    console.log 'about to get props'
     props = @_publicProperties()
     @_render_properties()
     box = @_create_box()
@@ -48,7 +47,7 @@
     
     for method in @methods
       complexText = new Kinetic.Text({
-          x: @base_x-17,
+          x: @base_x-40,
           y: @current_y,
           text: method,
           fontSize: 9,
@@ -56,7 +55,7 @@
           textStroke: "#333",
           textFill: "#333",
           textStrokeWidth: 0.1,
-          align: "center",
+          align: "left",
           verticalAlign: "middle"});
       @classBody.add(complexText)
       @current_y = @current_y + 20
@@ -64,7 +63,7 @@
   _render_properties:() =>
     for property in @props
       complexText = new Kinetic.Text({
-          x: @base_x-25,
+          x: @base_x-40,
           y: @current_y+15,
           text: property,
           fontSize: 9,
@@ -72,7 +71,7 @@
           textStroke: "#333",
           textFill: "#333",
           textStrokeWidth: 0.1,
-          align: "center",
+          align: "left",
           verticalAlign: "middle"});
       @classBody.add(complexText)
       @current_y = @current_y + 20
