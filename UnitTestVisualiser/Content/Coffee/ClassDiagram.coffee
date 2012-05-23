@@ -1,5 +1,6 @@
 ﻿class ClassDiagram
-  constructor: (x, y, data) ->
+  constructor: (x, y, data, fn_unselect) ->
+    @fn_unselect = fn_unselect
     @base_x = x
     @base_y = y
     @class_name = data.ClassName
@@ -8,7 +9,6 @@
     @props = data.PublicProperties
 
   get_Layer: =>
-    console.log 'in get_Layer'
     @classGroup = new Kinetic.Group({draggable: true})
     @classBody = new Kinetic.Group()
 
@@ -18,7 +18,7 @@
     @_render_methods()
     props = @_publicProperties()
     @_render_properties()
-    box = @_create_box()
+    @box = @_create_box()
    
     line = @_drawLine()
     publicMethod = @_publicMethod()
@@ -26,7 +26,7 @@
 
 
     # add to parent group
-    @classGroup.add(box);
+    @classGroup.add(@box);
     @classGroup.add(line);
     
     @classGroup.add(publicMethod)
@@ -38,10 +38,17 @@
 	
 
     # register click event
-    @classGroup.on('mouseup', -> box.transitionTo({strokeWidth: 4, duration: 0.3, easing: 'ease-in-out'}))
+    @classGroup.on('mouseup', @Select )
     
     classLayer.add(@classGroup)
     classLayer
+
+  Select: =>
+    @fn_unselect()
+    @box.transitionTo({strokeWidth: 4, duration: 0.1})
+
+  UnSelect: =>
+    @box.transitionTo({strokeWidth: 1, duration: 0.1})
 
   _render_methods:() =>
     
@@ -121,8 +128,6 @@
       
 
   _create_box: =>     
-    console.log("base_y: #{@base_y}")
-    console.log("current_y: #{@current_y}")
     rectX = @base_x - 57;
     rectY = @base_y - 55;
     box = new Kinetic.Rect({
