@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DemoApp.Tests.ClassesUnderTest.AtmMachine.Test___Insert_Card
+namespace DemoApp.Tests.Helpers
 {
     public class TestNameAttribute : Attribute
     {

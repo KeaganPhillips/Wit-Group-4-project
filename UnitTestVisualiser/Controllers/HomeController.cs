@@ -21,6 +21,7 @@ namespace UnitTestVisualiser.Controllers
 
         public JsonResult GetTestData()
         {
+            /*
             var classes = new List<ClassUnderTest>();
             var cut = new ClassUnderTest();
             cut.ClassName = "Customer";
@@ -34,8 +35,8 @@ namespace UnitTestVisualiser.Controllers
             cut.PublicMethods.Add("Bar()");
             cut.PublicMethods.Add("Buzz()");
             classes.Add(cut);
-
-            //var classes = UtReflector.Get();
+            */
+            var classes = UtReflector.Get();
             return new JsonResult { Data = classes, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
         }
 
