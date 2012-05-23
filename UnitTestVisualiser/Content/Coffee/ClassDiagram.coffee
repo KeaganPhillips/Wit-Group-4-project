@@ -12,7 +12,7 @@
     @classGroup = new Kinetic.Group({draggable: true})
     @classBody = new Kinetic.Group()
 
-    classLayer = new Kinetic.Layer();
+    @classLayer = new Kinetic.Layer();
     
     @classGroup.draggable(true)
     @_render_methods()
@@ -40,15 +40,22 @@
     # register click event
     @classGroup.on('mouseup', @Select )
     
-    classLayer.add(@classGroup)
-    classLayer
+    @classLayer.add(@classGroup)
+    @classLayer
 
   Select: =>
     @fn_unselect()
-    @box.transitionTo({strokeWidth: 4, duration: 0.1})
+    @box.setStroke("#aa3333");
+    @box.setStrokeWidth(5);
+    @classLayer.draw();
+    #@box.transitionTo({strokeWidth: 5, duration: 0.1})
 
   UnSelect: =>
-    @box.transitionTo({strokeWidth: 1, duration: 0.1})
+    @box.setStroke("#000000");
+    @box.setStrokeWidth(1);
+    @classLayer.draw();
+
+    #@box.transitionTo({strokeWidth: 1, duration: 0.1})
 
   _render_methods:() =>
     
@@ -136,9 +143,11 @@
                 width: 200,
                 height: 68  + (@current_y - @base_y),
                 cornerRadius: 5,
-                fill: "#ffffff",
+                shadow:{color: "black",blur: 10,offset: [15, 15],alpha: 0.5}
+                fill: "#eeffee",
                 stroke: "black",
-                strokeWidth: 1
+                strokeWidth: 1,
+                
             });
    _drawLine: =>
      points = [
