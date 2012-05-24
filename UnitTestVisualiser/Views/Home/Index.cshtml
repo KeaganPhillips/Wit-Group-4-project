@@ -15,18 +15,17 @@
 </div>
 <div style="position:relative;width:1200px;" >
     <div id="page" style="position:relative;width:500px;height:200px;float:left;overflow: scroll;overflow-x:hidden;"  class="standardBorder">
-    <h1>New Tree</h1>
+    <h1>Class</h1>
     <div id="tree1"></div>
     <script>
         $(function() {
             var data = [
                 {
-                    label: 'Class1',
+                    label: 'Test Description 1',
                     id: 1,
                     children: [
-                        {label: 'Test 1', id: 2},
-                        {label: 'Test 2',id: 3},
-						{label: 'Test 3', id: 4},
+                        {label: 'Scenario 1:', id: 2},
+                        {label: 'Scenario 2:',id: 3},
                         
                             
                     ]       
@@ -34,16 +33,27 @@
                 },      
                         
                 {
-                    label: 'Class2',
-					id:5,
+                    label: 'Test Description 2',
+					id:4,
 					children:[
-						{label:'Test 1',id:6},
-						{label:'Test 2',id:7},
-						{label:'Test 3',id:8},
+						{label:'Scenario 1:',id:5},
+						{label:'Scenario 2:',id:6},
 					
 					
 					]
-                }
+                },
+                {
+                    label: 'Test Description 3',
+                    id: 7,
+                    children: [
+                        {label: 'Given:', id: 8},
+                        {label: 'When:',id: 9},
+                        
+                            
+                    ]       
+                       
+                }      
+                   
             ];
 
             $('#tree1').tree({
@@ -57,7 +67,41 @@
     </script>
 </div>
     </div> 
-    <div style="position:relative;width:696px;height:200px;float:right;"  class="standardBorder" >
-    test2
-    </div> 
+    <div style="position:relative;width:696px;height:200px;float:right; overflow: scroll;" class="standardBorder" >
+    test2<br />
+    
+    <form action = "">
+    <table>
+        <tr>
+            <td><b>Class:</b></td>
+            <td><input type="text" name="class" size="39" /></td>
+        </tr>
+        <tr>
+            <td><b>Class Description:</b></td>
+            <td><textarea name="clsDescription" rows ="5" cols="30" ></textarea></td>
+        </tr>
+        <tr>
+            <td><b>Test:</b></td>
+            <td><input type="text" name="test" size="39" /></td>
+        </tr>
+        <tr>
+            <td><b>Scenario:</b></td>
+            <td><input type="text" name="scenario" size="39"  /></td>
+        </tr>
+        <tr>
+            <td><b>Given:</b></td>
+            <td><input type="text" name="given" size="39" /></td>
+        </tr>
+        <tr>
+            <td><b>When:</b></td>
+            <td><input type="text" name="when" size="39"  /></td>
+        </tr>
+        <tr>
+            <td><b>Then:</b></td>
+            <td><textarea name="then" rows ="5" cols="30" ></textarea></td>
+        </tr>
+    </table>
+                  
+</form>
+    </div>
 </div>
