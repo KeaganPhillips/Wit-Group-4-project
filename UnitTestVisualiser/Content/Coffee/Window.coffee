@@ -8,10 +8,9 @@
   diagrams = []
 
   diagram_selected = (data) ->
-    console.log $('#lblClassName')
     $('#lblClassName').html(data.ClassName)
-    console.log $('clsDescription')
     $('clsDescription').html(data.ClassDescription)
+    build_tree(data.Tests)
   
   unselect_all_diagrams = ->
     cd.UnSelect() for cd in diagrams

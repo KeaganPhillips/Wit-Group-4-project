@@ -18,8 +18,9 @@
     <h1>Class</h1>
     <div id="tree1"></div>
     <script>
-    $(function () {
-        var play = [{ "Title": "Credit Account Test", "Description": null, "Scenarios": [{ "Description": "The account can be credited", "Given": "We have a valid open account with R100.00 balance", "When": "We credit the account with R550.00", "Then": "The blance should be R650.00" }] }]
+
+    function build_tree(play) {
+        //var play = [{ "Title": "Credit Account Test", "Description": null, "Scenarios": [{ "Description": "The account can be credited", "Given": "We have a valid open account with R100.00 balance", "When": "We credit the account with R550.00", "Then": "The blance should be R650.00" }] }]
         //var array = new Array("play", "ball");
         x = play.length;
         //document.write(x);
@@ -42,12 +43,12 @@
         $('#tree1').tree({
             data: data,
             //autoOpen: 0,
-            dragAndDrop: true,
+            //dragAndDrop: true,
             selectable: true,
-            saveState: 'demo_tree'
+            //saveState: 'demo_tree'
         });
+    }
 
-    });
 
     function getChildren(scenarios) {
         var children = [];
