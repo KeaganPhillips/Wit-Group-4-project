@@ -15,7 +15,11 @@
   unselect_all_diagrams = ->
     cd.UnSelect() for cd in diagrams
   
-
+  applyStyle = ->
+    $('.button').button()
+  
+  applyStyle()
+   
   $('#btnGetData').click ->
     $.get '/home/GetTestData/', (all_classes) ->
       diagrams = []
@@ -27,4 +31,3 @@
         if x>1000
           y = 250+y 
           x = 77
-    

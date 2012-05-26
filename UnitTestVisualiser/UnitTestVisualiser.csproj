@@ -20,6 +20,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -84,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\jqtree.css" />
+    <Content Include="Content\jquery-ui-1.8.20.custom.css" />
     <Content Include="Content\themes\eggplant\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\eggplant\images\ui-bg_flat_0_eeeeee_40x100.png" />
     <Content Include="Content\themes\eggplant\images\ui-bg_flat_55_994d53_40x100.png" />
@@ -101,6 +103,7 @@
     <Content Include="Content\themes\eggplant\images\ui-icons_ffffff_256x240.png" />
     <Content Include="Content\themes\eggplant\jquery-ui-1.8.19.custom.css" />
     <Content Include="Scripts\backbone-min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.custom.min.js" />
     <Content Include="Scripts\json2.js" />
     <Content Include="Scripts\kinetic-v3.9.4.js" />
     <Content Include="Scripts\tree.jquery.js" />
