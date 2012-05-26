@@ -3,6 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 11
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DF51961C-A21B-4BD5-9F0C-FF8F6DC374E5}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\Downloads\mbraak-jqTree-0.8-7-gb9ef6ba\mbraak-jqTree-b9ef6ba\jqtree.css = ..\..\Downloads\mbraak-jqTree-0.8-7-gb9ef6ba\mbraak-jqTree-b9ef6ba\jqtree.css
 		Local.testsettings = Local.testsettings
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 		Wits_group4_proj.vsmdi = Wits_group4_proj.vsmdi

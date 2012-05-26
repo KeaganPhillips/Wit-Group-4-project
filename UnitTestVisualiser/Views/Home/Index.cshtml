@@ -18,52 +18,46 @@
     <h1>Class</h1>
     <div id="tree1"></div>
     <script>
-        $(function() {
-            var data = [
-                {
-                    label: 'Test Description 1',
-                    id: 1,
-                    children: [
-                        {label: 'Scenario 1:', id: 2},
-                        {label: 'Scenario 2:',id: 3},
-                        
-                            
-                    ]       
-                       
-                },      
-                        
-                {
-                    label: 'Test Description 2',
-					id:4,
-					children:[
-						{label:'Scenario 1:',id:5},
-						{label:'Scenario 2:',id:6},
-					
-					
-					]
-                },
-                {
-                    label: 'Test Description 3',
-                    id: 7,
-                    children: [
-                        {label: 'Given:', id: 8},
-                        {label: 'When:',id: 9},
-                        
-                            
-                    ]       
-                       
-                }      
-                   
-            ];
+    $(function () {
+        var play = [{ "Title": "Credit Account Test", "Description": null, "Scenarios": [{ "Description": "The account can be credited", "Given": "We have a valid open account with R100.00 balance", "When": "We credit the account with R550.00", "Then": "The blance should be R650.00" }] }]
+        //var array = new Array("play", "ball");
+        x = play.length;
+        //document.write(x);
+        //z = Scenarios.length;
+        //document.write(z);
+        //var i=0;
+        var data = [];
+        for (var i = 0; i < play.length; i++) {
+            data.push(
+					{
+					    label: play[i].Title,
+					    id: i,
+					    children: getChildren(play[i].Scenarios)
+					})
+        }
 
-            $('#tree1').tree({
-                data: data,
-                //autoOpen: 0,
-                dragAndDrop: true,
-                selectable: true,
-                saveState: 'demo_tree'
-            });
+        //console.log(data);
+
+
+        $('#tree1').tree({
+            data: data,
+            //autoOpen: 0,
+            dragAndDrop: true,
+            selectable: true,
+            saveState: 'demo_tree'
         });
+
+    });
+
+    function getChildren(scenarios) {
+        var children = [];
+        for (var i = 0; i < scenarios.length; i++) {
+            children.push({
+                label: scenarios[i].Description, id: i
+            });
+        }
+        return children;
+    }
     </script>
 </div>
     </div> 

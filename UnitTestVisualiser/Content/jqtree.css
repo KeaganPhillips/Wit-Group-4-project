@@ -23,7 +23,7 @@ ul.tree li {
 }
 
 ul.tree .toggler {
-	background: url(treeDownTriangleBlack.png) no-repeat 0 50%;
+	background: url(/content/images/treeDownTriangleBlack.png) no-repeat 0 50%;
 	width: 12px;
 	display: block;
 	position: absolute;
@@ -54,7 +54,7 @@ ul.tree li.folder .title {
 }
 
 ul.tree .toggler.closed {
-	background-image: url(treeRightTriangleBlack.png);
+	background-image: url(/content/images/treeRightTriangleBlack.png);
 }
 
 span.tree-dragging {
