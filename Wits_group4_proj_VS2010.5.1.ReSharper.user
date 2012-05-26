@@ -10,50 +10,59 @@
     <RecentFiles>
       <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:Helpers/f:TestHelper.cs" caret="0" fromTop="0" />
       <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:Helpers/f:IGiven.cs" caret="0" fromTop="0" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:TestScenarion.cs" caret="0" fromTop="0" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:ClassTest.cs" caret="0" fromTop="0" />
       <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="2406" fromTop="34" />
       <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="1120" fromTop="17" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="145" fromTop="6" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:Window.coffee" caret="447" fromTop="9" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:ClassUnderTest.cs" caret="381" fromTop="13" />
-      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:Helpers/f:IScenario.cs" caret="119" fromTop="6" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="1259" fromTop="15" />
-      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:AtmMachine/d:Test - Insert Card/f:can_insert_card.cs" caret="666" fromTop="22" />
-      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:AtmMachine/d:Test - Check Balance/f:blance_0_for_new_account.cs" caret="535" fromTop="8" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="807" fromTop="21" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:Helpers/f:ClassUnderTestAttribute.cs" caret="0" fromTop="0" />
+      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:ClassUnderTest.cs" caret="441" fromTop="14" />
+      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:TestScenarion.cs" caret="260" fromTop="9" />
+      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:ClassTest.cs" caret="229" fromTop="8" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="807" fromTop="20" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:Helpers/f:TestNameAttribute.cs" caret="70" fromTop="4" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:Helpers/f:IScenario.cs" caret="74" fromTop="4" />
       <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Controllers/f:HomeController.cs" caret="434" fromTop="10" />
+      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="928" fromTop="13" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:Customer.cs" caret="0" fromTop="0" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:AtmMachine.cs" caret="0" fromTop="0" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:AtmCard.cs" caret="0" fromTop="0" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/d:Interfaces/f:IAccount.cs" caret="69" fromTop="3" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:AtmMachine/d:Test - Check Balance/f:blance_0_for_new_account.cs" caret="325" fromTop="10" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:AtmMachine/d:Test - Insert Card/f:can_insert_card.cs" caret="322" fromTop="6" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:Window.coffee" caret="443" fromTop="15" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:Account.cs" caret="211" fromTop="10" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:Account/d:Test - Credit Acc/f:can_credit_acc.cs" caret="590" fromTop="16" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="1095" fromTop="10" />
     </RecentFiles>
     <RecentEdits>
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Controllers/f:HomeController.cs" caret="143" fromTop="5" />
-      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:AtmMachine/d:Test - Check Balance/f:blance_0_for_new_account.cs" caret="410" fromTop="14" />
-      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:AtmMachine/d:Test - Insert Card/f:can_insert_card.cs" caret="733" fromTop="19" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:TestScenarion.cs" caret="0" fromTop="0" />
-      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:Helpers/f:IScenario.cs" caret="50" fromTop="3" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="319" fromTop="13" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="1120" fromTop="17" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Controllers/f:HomeController.cs" caret="370" fromTop="17" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:Window.coffee" caret="515" fromTop="18" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="144" fromTop="6" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Controllers/f:HomeController.cs" caret="1083" fromTop="29" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:Window.coffee" caret="515" fromTop="17" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:Window.coffee" caret="525" fromTop="14" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:Window.coffee" caret="524" fromTop="12" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:Window.coffee" caret="342" fromTop="7" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Controllers/f:HomeController.cs" caret="1133" fromTop="23" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="229" fromTop="9" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="404" fromTop="15" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:ClassUnderTest.cs" caret="381" fromTop="13" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="110" fromTop="4" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="1235" fromTop="11" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="1446" fromTop="31" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="1242" fromTop="19" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="923" fromTop="19" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="923" fromTop="16" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="923" fromTop="13" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="807" fromTop="21" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Controllers/f:HomeController.cs" caret="437" fromTop="11" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Controllers/f:HomeController.cs" caret="1031" fromTop="23" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="1729" fromTop="24" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="2195" fromTop="31" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="1962" fromTop="23" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="1502" fromTop="7" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="546" fromTop="18" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="693" fromTop="26" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="3502" fromTop="18" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:Window.coffee" caret="4" fromTop="0" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:Window.coffee" caret="284" fromTop="12" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:Window.coffee" caret="656" fromTop="22" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="95" fromTop="2" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:Account.cs" caret="174" fromTop="7" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/d:Interfaces/f:IAccount.cs" caret="103" fromTop="4" />
+      <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:Account.cs" caret="174" fromTop="8" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:Account/d:Test - Credit Acc/f:can_credit_acc.cs" caret="439" fromTop="12" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:Account/d:Test - Credit Acc/f:can_credit_acc.cs" caret="613" fromTop="9" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:Account/d:Test - Credit Acc/f:can_credit_acc.cs" caret="758" fromTop="14" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:Account/d:Test - Credit Acc/f:can_credit_acc.cs" caret="903" fromTop="15" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:Account/d:Test - Credit Acc/f:can_credit_acc.cs" caret="1030" fromTop="19" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:Account/d:Test - Credit Acc/f:can_credit_acc.cs" caret="1177" fromTop="16" />
+      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:Account/d:Test - Credit Acc/f:can_credit_acc.cs" caret="1358" fromTop="23" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:Window.coffee" caret="443" fromTop="15" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="3953" fromTop="24" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="3953" fromTop="29" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="3953" fromTop="14" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="3834" fromTop="11" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="1024" fromTop="19" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="382" fromTop="1" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="1319" fromTop="19" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="1095" fromTop="10" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -69,12 +78,12 @@
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
       <Item value="Type`0" priority="0" />
-      <Item value="return" priority="5" />
-      <Item value="typeof" priority="1" />
+      <Item value="return" priority="9" />
+      <Item value="typeof" priority="2" />
       <Item value="AtmMachine" priority="1" />
       <Item value="DemoApp" priority="0" />
       <Item value="AtmMachine`0" priority="0" />
-      <Item value="public" priority="1" />
+      <Item value="public" priority="2" />
       <Item value="static" priority="0" />
       <Item value="IList" priority="0" />
       <Item value="ClassUnderTest`0" priority="3" />
@@ -104,6 +113,10 @@
       <Item value="scenarios" priority="0" />
       <Item value="if" priority="0" />
       <Item value="null" priority="0" />
+      <Item value="void" priority="2" />
+      <Item value="decimal" priority="2" />
+      <Item value="IScenario`0" priority="0" />
+      <Item value="Assert`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Reflection.Assembly">
       <Item value="GetAssembly`0" priority="0" />
@@ -145,6 +158,9 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Reflection.MethodInfo">
       <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
+      <Item value="Fail`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>
