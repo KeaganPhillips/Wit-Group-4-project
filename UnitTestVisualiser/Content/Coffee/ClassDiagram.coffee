@@ -1,5 +1,6 @@
 ﻿class ClassDiagram
-  constructor: (x, y, data, fn_unselect) ->
+  constructor: (x, y, data, fn_unselect, fn_getTests) ->
+    @fn_getTests = fn_getTests 
     @fn_unselect = fn_unselect
     @base_x = x
     @base_y = y
@@ -7,6 +8,7 @@
     @methods = data.PublicMethods
     @current_y = @base_y
     @props = data.PublicProperties
+    @jsonData = data
 
   get_Layer: =>
     @classGroup = new Kinetic.Group({draggable: true})
@@ -38,7 +40,7 @@
 	
 
     # register click event
-    @classGroup.on('mouseup', @Select )
+    @classGroup.on('mousedown', @Select )
     
     @classLayer.add(@classGroup)
     @classLayer
@@ -48,14 +50,12 @@
     @box.setStroke("#aa3333");
     @box.setStrokeWidth(5);
     @classLayer.draw();
-    #@box.transitionTo({strokeWidth: 5, duration: 0.1})
+    @fn_getTests(@jsonData)
 
   UnSelect: =>
     @box.setStroke("#000000");
-    @box.setStrokeWidth(1);
+    @box.setStrokeWidth(2);
     @classLayer.draw();
-
-    #@box.transitionTo({strokeWidth: 1, duration: 0.1})
 
   _render_methods:() =>
     
@@ -143,11 +143,10 @@
                 width: 200,
                 height: 68  + (@current_y - @base_y),
                 cornerRadius: 5,
-                shadow:{color: "black",blur: 10,offset: [15, 15],alpha: 0.5}
-                fill: "#eeffee",
+                shadow: {color: "black",blur: 10,offset: [10, 10],alpha: 0.5}
+                fill: "#efffef",
                 stroke: "black",
-                strokeWidth: 1,
-                
+                strokeWidth: 2,                
             });
    _drawLine: =>
      points = [
