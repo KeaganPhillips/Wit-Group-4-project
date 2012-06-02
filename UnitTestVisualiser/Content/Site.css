@@ -82,3 +82,20 @@ textarea
     border-color:#cccccc;
     border-width:1px;
 }
+
+.cellHeading
+{
+    width:150px;
+    font-weight:normal;
+    font-family:Verdana;
+    
+}
+
+.cellDetail
+{
+    width:350px;
+    background-color:#eeeeee;
+    padding:2px;
+    font-family:Verdana;
+    
+}
