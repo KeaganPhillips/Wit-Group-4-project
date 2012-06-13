@@ -1,0 +1,27 @@
+﻿@using UnitTestReflector.Core
+@model IList<ClassUnderTest>
+
+    
+    @foreach (ClassUnderTest item in Model)
+    {
+        <br />
+        
+        <b>Class - </b> @item.ClassName 
+        @item.ClassDescription
+
+        <br />
+        
+        
+        <br />
+        <table cellpadding="3" cellspacing="3">
+            
+            @foreach (ClassTest test in item.Tests)
+            {
+                <tr border ="1" bgcolor="#777777" color="#ffffff">
+                 <td>Test - @test.Title</td>  
+                 
+                  </tr> 
+            }
+        </table>
+    }
+     
