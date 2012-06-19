@@ -87,23 +87,35 @@ textarea
 {
     padding-top:10px;
     font-weight:bold;
-    font-family:Verdana;
+    font-family:Arial;
     
 }
 
 .cellTitle
 {
-    width:150px;
+    width:130px;
     font-weight:normal;
-    font-family:Verdana;
+    font-family:Arial;
+    vertical-align:top;
     
 }
 
 .cellDetail
 {
+    padding-left:5px;
     width:350px;
     background-color:#eeeeee;
     padding:2px;
-    font-family:Verdana;
-    
+    font-family:Arial;    
+}
+
+.cellDetailMultiline
+{
+    vertical-align:top;
+    padding-left:5px;
+    width:350px;
+    height:50px;
+    background-color:#eeeeee;
+    padding:2px;
+    font-family:Arial;    
 }

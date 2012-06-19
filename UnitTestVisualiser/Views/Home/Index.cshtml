@@ -23,37 +23,37 @@
             <td class='cellHeading' colspan=2 >Class Details</td>
         </tr>            
         <tr>
-            <td class='.cellTitle' >Class Name</td>
+            <td class='cellTitle' >Class Name</td>
             <td class='cellDetail' ><a id="lblClassName"  /></td>
         </tr>
         <tr>
             <td class='cellHeading' colspan=2 >Test Details</td>
         </tr>   
         <tr>
-            <td class='.cellTitle' >Test Title</td>
+            <td class='cellTitle' >Test Title</td>
             <td class='cellDetail' id='lblTestTitle' ></td>
         </tr>
         <tr>
-            <td  class='.cellTitle' >Test Description</td>
-            <td class='cellDetail'><a id="clsDescription" /><//td>
+            <td  class='cellTitle' >Test Description</td>
+            <td class='cellDetailMultiline' valign="top" id='lblTestDescription' ></td>
         </tr>
                 <tr>
             <td class='cellHeading' colspan=2 >Scenario Details</td>
         </tr>   
         <tr>
-            <td class='.cellTitle' >Scenario</td>
-            <td class='cellDetail'></td>
+            <td class='cellTitle' >Scenario</td>
+            <td class='cellDetail' id='lblScenario' ></td>
         </tr>
         <tr>
-            <td class='.cellTitle' >Given</td>
+            <td class='cellTitle' >Given</td>
             <td class='cellDetail' id='lblGiven' ></td>
         </tr>
         <tr>
-            <td class='.cellTitle' >When</td>
+            <td class='cellTitle' >When</td>
             <td class='cellDetail'></td>
         </tr>
         <tr>
-            <td class='.cellTitle' >Then</td>
+            <td class='cellTitle' >Then</td>
             <td class='cellDetail'></td>
         </tr>
     </table>
@@ -78,9 +78,12 @@
 
             var s = 0;
             for (s = 0; s < data[i].Scenarios.length; s++) {
-                var currentTestTitle = data[i].Title;
-                var currentGiven = data[i].Scenarios[s].Given;
-                itemString += "<ul><li><span class='folder'><a href='javascript:populateDetails(\"" + given + "\",\"" + testTitle  +"\")'>Scenario: " + data[i].Scenarios[s].Description + "</a></span></li></ul>";
+                var testTitle = data[i].Title;
+                var testDesc = data[i].Description;
+                var given = data[i].Scenarios[s].Given;
+                var scenario = data[i].Scenarios[s].Description;
+
+                itemString += "<ul><li><span class='folder'><a href='javascript:populateDetails(\"" + given + "\",\"" + testTitle + "\",\"" + testDesc + "\",\"" + scenario +"\")'>Scenario: " + data[i].Scenarios[s].Description + "</a></span></li></ul>";
             }
             itemString += "</li>"
         }
@@ -93,9 +96,12 @@
 
     }
 
-    function populateDetails(given, testTitle) {
+    function populateDetails(given, testTitle, description, scenario) {
         $('#lblTestTitle').text(testTitle);
+        $('#lblTestDescription').text(description);
+        $('#lblScenario').text(scenario);
         $('#lblGiven').text(given);
+
 
     }
 
