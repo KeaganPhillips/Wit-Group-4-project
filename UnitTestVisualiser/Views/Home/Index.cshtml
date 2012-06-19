@@ -6,31 +6,17 @@
     
 <input type=button id='btnGetData' value='Get Data'/>
 <input type=button id='btnGenerateReport' value='Generate Report'/>
-@Html.ActionLink("Print Items", "PrintItems", null,  new { target = "_blank" })
+@Html.ActionLink("Print Report", "PrintItems", null,  new { target = "_blank" })
 
 <div class="standardBorder"  style="position:relative;top:0px; width:1200px;height:400px;overflow: scroll; overflow-x:hidden;">
 
-<!--<div id=,container' width='1200px' height='800px' style='background-color:#eeeeee;'></div>-->
+<div id='container' width='1200px' height='800px' style='background-color:#eeeeee;'></div>-->
     @*
     <canvas id="mainCanvas" width='1200px' height='800px' style='background-color:#eeeeee;'></canvas>
 *@
 </div>
 <div style="position:relative;width:1200px;" >
-    <div id="page" style="position:relative;width:500px;height:200px;float:left;overflow: scroll;overflow-x:hidden;"  class="standardBorder">
-<<<<<<< HEAD
-=======
-   <!-- <div id="page" style="position:relative;width:500px;height:200px;float:left;overflow: scroll;overflow-x:hidden;"  class="standardBorder">-->
-    <h1>Class</h1>
-    <div id="tree1"></div>
-    <script>
->>>>>>> 9aaedc77621b5022f50172d70b1069baf2424520
-
-<button id="add">Add!</button>
-<ul id="browser" class="filetree treeview">
-</ul>
-</div>
-    
-    <div style="position:relative;width:696px;height:200px;float:right; overflow: scroll;overflow-x:hidden;"  class="standardBorder" >
+<div style="position:relative;width:696px;height:200px;float:right; overflow: scroll;overflow-x:hidden;"  class="standardBorder" >
    <table cellpadding=0 cellspacing=3 style='padding 5px;'>
         <tr>
             <td class='cellHeading' >Class Name</td>
@@ -61,6 +47,11 @@
             <td class='cellDetail'></td>
         </tr>
     </table>
+    </div>
+
+    <div id="TreeViewPanel" style="position:relative;width:500px;height:200px;float:left;overflow: scroll;overflow-x:hidden;"  class="standardBorder">
+
+ 
                   
     </div>
 </div>
