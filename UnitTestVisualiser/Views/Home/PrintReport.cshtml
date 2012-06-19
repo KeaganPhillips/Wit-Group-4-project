@@ -13,14 +13,29 @@
         
         
         <br />
-        <table cellpadding="3" cellspacing="3">
+        <table cellpadding="3" cellspacing="3" border ="1" bgcolor="BCB7B7" color="#ffffff">
             
             @foreach (ClassTest test in item.Tests)
             {
-                <tr border ="1" bgcolor="BCB7B7" color="#ffffff">
-                 <td>Test - @test.Title</td>  
-                 
+                <tr>
+                 <td>Test - @test.Title</td>
                   </tr> 
+                
+                <tr ><td>
+                @test.Description
+                </td></tr>
+                
+                <tr ><td>
+                @foreach (TestScenarion scenario in test.Scenarios)
+                {
+                      <table cellpadding="3" cellspacing="3">
+                        <tr><td>Description - @scenario.Description </td></tr>
+                        <tr><td>Given - @scenario.Given</td></tr>
+                        <tr><td>Then - @scenario.Then</td></tr>
+                        <tr><td>When - @scenario.When</td></tr>
+                      </table>
+                }
+            </td></tr>
             }
         </table>
     }
