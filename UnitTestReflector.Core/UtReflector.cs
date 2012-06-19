@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
 using DemoApp.Tests.Helpers;
+using YamlDotNet.RepresentationModel;
 
 namespace UnitTestReflector.Core
 {
@@ -24,13 +26,48 @@ namespace UnitTestReflector.Core
                 .Distinct()
                 .ToList();
 
+            var testDescriptions = getTestDescriptions(unitTestAssembly);
+
             concreteClasses
-                .ForEach(x=> lstClassesUnderTest.Add( getClassUnderTest(x, testScenarios)) );
+                .ForEach(x => lstClassesUnderTest.Add(getClassUnderTest(x, testScenarios, testDescriptions)));
 
             return lstClassesUnderTest;
         }
 
-        private static ClassUnderTest getClassUnderTest(Type concreteClass, IEnumerable<IScenario> testScenarios)
+        private static IDictionary<string, string> getTestDescriptions(Assembly assembly)
+        {
+            var descriptions = new Dictionary<string, string>();
+
+            // Find all the '.yaml' files in the assembly, and parse the YAML to get the test descriptions
+            assembly.GetManifestResourceNames()
+                .Where(x => x.EndsWith(".yaml"))
+                .ToList()
+                .ForEach(x =>
+                             {
+                                 using (var stream = assembly.GetManifestResourceStream(x))
+                                 using (var reader = new StreamReader(stream))
+                                 {
+                                     var yaml = new YamlStream();
+                                     yaml.Load(reader);
+                                     var mapping = (YamlMappingNode) yaml.Documents[0].RootNode;
+
+                                     var key = getValueFromNode(mapping, "Test Title");
+                                     var val = getValueFromNode(mapping, "Description");
+                                     descriptions.Add(key, val);
+                                 }
+                             });
+
+            return descriptions;
+        }
+
+        private static string getValueFromNode(YamlMappingNode mapping, string field)
+        {
+            return ((YamlScalarNode)mapping
+                .Children[mapping.Children.Keys.First(y => y.ToString() == field)])
+                .Value;
+        }
+
+        private static ClassUnderTest getClassUnderTest(Type concreteClass, IEnumerable<IScenario> testScenarios, IDictionary<string, string> testDescriptions)
         {
             var methodsToExclude = new[] {"ToString", "GetType", "Equals", "GetHashCode"};
 
@@ -46,12 +83,12 @@ namespace UnitTestReflector.Core
                                .Where(m => !m.IsSpecialName &&  !methodsToExclude.Contains(m.Name) )
                                .Select(x => x.Name)
                                .ToList()
-                           ,Tests = getTests(concreteClass, testScenarios)
+                           ,Tests = getTests(concreteClass, testScenarios, testDescriptions)
                        };
         }
 
         
-        private static IList<ClassTest> getTests(Type concreteClass, IEnumerable<IScenario> testScenarios)
+        private static IList<ClassTest> getTests(Type concreteClass, IEnumerable<IScenario> testScenarios, IDictionary<string, string> testDescriptions)
         {
             var lst = new List<ClassTest>();
 
@@ -65,13 +102,13 @@ namespace UnitTestReflector.Core
 
             tests.ForEach(t=>
                               {
-                                  lst.Add(getSingleTest(t, concreteClass, testScenarios.ToList()));
+                                  lst.Add(getSingleTest(t, concreteClass, testScenarios.ToList(), testDescriptions));
                               });
 
             return lst;
         }
 
-        private static ClassTest getSingleTest(string testName, Type concreteClass, IList<IScenario> scenarios)
+        private static ClassTest getSingleTest(string testName, Type concreteClass, IList<IScenario> scenarios, IDictionary<string, string> testDescriptions)
         {
             var testScenarions =
                 scenarios
@@ -95,10 +132,11 @@ namespace UnitTestReflector.Core
 
 
             return new ClassTest()
-            {
-                Title = testName,
-                Scenarios = testScenarions.ToList() 
-            };
+                       {
+                           Title = testName,
+                           Description = testDescriptions.ContainsKey(testName) ? testDescriptions[testName] : string.Empty,
+                           Scenarios = testScenarions.ToList()
+                       };
         }
 
         private static string getThenDescription(IEnumerable<Attribute> attributeses)
