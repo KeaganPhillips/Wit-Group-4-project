@@ -192,10 +192,6 @@
     <Content Include="Views\Home\PrintReport.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\itextSharp\ASP_MVC3_PDF_Reporting_src\PdfReportGenerator\PdfReportGenerator.csproj">
-      <Project>{DF00196A-3B96-4BCD-8C4E-879DB8EDFE95}</Project>
-      <Name>PdfReportGenerator</Name>
-    </ProjectReference>
     <ProjectReference Include="..\UnitTestReflector.Core\UnitTestReflector.Core.csproj">
       <Project>{AA7CB2F3-A5B3-421D-B447-B8861EB502B3}</Project>
       <Name>UnitTestReflector.Core</Name>
