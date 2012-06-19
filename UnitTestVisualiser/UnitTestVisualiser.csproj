@@ -112,6 +112,9 @@
     <Content Include="Content\themes\eggplant\images\ui-icons_ffffff_256x240.png" />
     <Content Include="Content\themes\eggplant\jquery-ui-1.8.19.custom.css" />
     <Content Include="Scripts\backbone-min.js" />
+    <Content Include="Scripts\jquery.cookie.js" />
+    <Content Include="Scripts\jquery.treeview.edit.js" />
+    <Content Include="Scripts\jquery.treeview.js" />
     <Content Include="Scripts\json2.js" />
     <Content Include="Scripts\kinetic-v3.9.4.js" />
     <Content Include="Scripts\tree.jquery.js" />
