@@ -85,6 +85,14 @@ textarea
 
 .cellHeading
 {
+    padding-top:10px;
+    font-weight:bold;
+    font-family:Verdana;
+    
+}
+
+.cellTitle
+{
     width:150px;
     font-weight:normal;
     font-family:Verdana;

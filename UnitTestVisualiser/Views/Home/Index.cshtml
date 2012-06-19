@@ -18,40 +18,94 @@
 <div style="position:relative;width:1200px;" >
 <div style="position:relative;width:696px;height:200px;float:right; overflow: scroll;overflow-x:hidden;"  class="standardBorder" >
    <table cellpadding=0 cellspacing=3 style='padding 5px;'>
+            
         <tr>
-            <td class='cellHeading' >Class Name</td>
+            <td class='cellHeading' colspan=2 >Class Details</td>
+        </tr>            
+        <tr>
+            <td class='.cellTitle' >Class Name</td>
             <td class='cellDetail' ><a id="lblClassName"  /></td>
         </tr>
         <tr>
-            <td  class='cellHeading' >Class Description</td>
+            <td class='cellHeading' colspan=2 >Test Details</td>
+        </tr>   
+        <tr>
+            <td class='.cellTitle' >Test Title</td>
+            <td class='cellDetail' id='lblTestTitle' ></td>
+        </tr>
+        <tr>
+            <td  class='.cellTitle' >Test Description</td>
             <td class='cellDetail'><a id="clsDescription" /><//td>
         </tr>
+                <tr>
+            <td class='cellHeading' colspan=2 >Scenario Details</td>
+        </tr>   
         <tr>
-            <td class='cellHeading' >Test</td>
+            <td class='.cellTitle' >Scenario</td>
             <td class='cellDetail'></td>
         </tr>
         <tr>
-            <td class='cellHeading' >Scenario</td>
+            <td class='.cellTitle' >Given</td>
+            <td class='cellDetail' id='lblGiven' ></td>
+        </tr>
+        <tr>
+            <td class='.cellTitle' >When</td>
             <td class='cellDetail'></td>
         </tr>
         <tr>
-            <td class='cellHeading' >Given</td>
-            <td class='cellDetail'></td>
-        </tr>
-        <tr>
-            <td class='cellHeading' >When</td>
-            <td class='cellDetail'></td>
-        </tr>
-        <tr>
-            <td class='cellHeading' >Then</td>
+            <td class='.cellTitle' >Then</td>
             <td class='cellDetail'></td>
         </tr>
     </table>
     </div>
 
     <div id="TreeViewPanel" style="position:relative;width:500px;height:200px;float:left;overflow: scroll;overflow-x:hidden;"  class="standardBorder">
-
- 
-                  
+        <ul id="browser">
+        </ul>                
     </div>
 </div>
+
+
+<script type="text/javascript">
+
+    function build_tree(data) {
+        var i = 0;
+        var itemString = '';
+
+        itemString += "<li><span class='folder'>Root</span><ul>";
+        for (i = 0; i < data.length; i++) {
+            itemString += "<li><span class='folder'>Test - " + data[i].Title + "</span>";
+
+            var s = 0;
+            for (s = 0; s < data[i].Scenarios.length; s++) {
+                var currentTestTitle = data[i].Title;
+                var currentGiven = data[i].Scenarios[s].Given;
+                itemString += "<ul><li><span class='folder'><a href='javascript:populateDetails(\"" + given + "\",\"" + testTitle  +"\")'>Scenario: " + data[i].Scenarios[s].Description + "</a></span></li></ul>";
+            }
+            itemString += "</li>"
+        }
+
+        $('#browser li').remove();
+        var branches = $(itemString).appendTo('#browser');
+        $("#browser").treeview({
+            add: branches
+        });
+
+    }
+
+    function populateDetails(given, testTitle) {
+        $('#lblTestTitle').text(testTitle);
+        $('#lblGiven').text(given);
+
+    }
+
+
+    $(function () {
+
+        $("#browser").treeview();
+        var branches = $("<li><span class='folder'>Root</span>").appendTo("#browser");
+        $("#browser").treeview({
+            add: branches
+        });
+    });
+</script>
