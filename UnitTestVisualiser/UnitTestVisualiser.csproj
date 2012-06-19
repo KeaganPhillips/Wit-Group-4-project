@@ -53,6 +53,10 @@
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp, Version=5.2.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\iTextSharp.5.2.0\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Jurassic">
       <HintPath>..\packages\CoffeeSharp.0.5\lib\Jurassic.dll</HintPath>
     </Reference>
@@ -85,6 +89,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\ItemstoDisplayList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -173,9 +179,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
@@ -185,8 +189,13 @@
   <ItemGroup>
     <None Include="Content\Coffee\ClassDiagram.coffee" />
     <None Include="Content\Coffee\Window.coffee" />
+    <Content Include="Views\Home\PrintReport.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\itextSharp\ASP_MVC3_PDF_Reporting_src\PdfReportGenerator\PdfReportGenerator.csproj">
+      <Project>{DF00196A-3B96-4BCD-8C4E-879DB8EDFE95}</Project>
+      <Name>PdfReportGenerator</Name>
+    </ProjectReference>
     <ProjectReference Include="..\UnitTestReflector.Core\UnitTestReflector.Core.csproj">
       <Project>{AA7CB2F3-A5B3-421D-B447-B8861EB502B3}</Project>
       <Name>UnitTestReflector.Core</Name>
