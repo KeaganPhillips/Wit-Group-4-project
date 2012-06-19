@@ -3,4 +3,5 @@
   <Module PersistentId="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00" ModuleId="DemoApp.Tests" />
   <Module PersistentId="DC0EE36F-949F-40F2-A451-56BBF6767081" ModuleId="DemoApp" />
   <Module PersistentId="AA7CB2F3-A5B3-421D-B447-B8861EB502B3" ModuleId="UnitTestReflector.Core" />
+  <Module PersistentId="DF00196A-3B96-4BCD-8C4E-879DB8EDFE95" ModuleId="PdfReportGenerator" />
 </Modules>

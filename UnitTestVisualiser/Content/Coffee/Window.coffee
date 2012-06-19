@@ -15,10 +15,13 @@
   unselect_all_diagrams = ->
     cd.UnSelect() for cd in diagrams
   
-  applyStyle = ->
-    $('.button').button()
+  #applyStyle = ->
+  #  $('.button').button()
   
-  applyStyle()
+  #applyStyle()
+  #tree = new MooTreeControl({div: $('#mytree'), mode: 'files', grid: true}, {text: 'Root Node', open: true})
+  #console.log tree
+  #tree.insert({text:'Sample item'}) 
    
   $('#btnGetData').click ->
     stage.clear()
