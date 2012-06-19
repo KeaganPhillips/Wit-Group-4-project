@@ -9,6 +9,12 @@
 
   diagram_selected = (data) ->
     $('#lblClassName').html(data.ClassName)
+    $('#lblTestTitle').text('');
+    $('#lblTestDescription').text('');
+    $('#lblScenario').text('');
+    $('#lblGiven').text('');
+    $('#lblWhen').text('');
+    $('#lblThen').text('');
     $('clsDescription').html(data.ClassDescription)
     build_tree(data.Tests)
   
