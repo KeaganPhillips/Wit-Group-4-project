@@ -6,36 +6,39 @@
     {
         <br />
         
-        <b>Class - </b> @item.ClassName 
+        <h3>Class - @item.ClassName </h3>
         @item.ClassDescription
 
         <br />
         
         
         <br />
-        <table cellpadding="3" cellspacing="3" border ="1" bgcolor="BCB7B7" color="#ffffff">
+        <table cellpadding="3" cellspacing="3" >
             
             @foreach (ClassTest test in item.Tests)
             {
-                <tr>
+                <tr border = "1" bgcolor="BCB7B7" color="#ffffff">
                  <td>Test - @test.Title</td>
-                  </tr> 
+                </tr> 
                 
-                <tr ><td>
+                <tr border ="1"><td>
                 @test.Description
                 </td></tr>
                 
-                <tr ><td>
+                <tr >            
                 @foreach (TestScenarion scenario in test.Scenarios)
-                {
-                      
-                        <tr><td>Description - @scenario.Description </td></tr>
-                        <tr><td>Given - @scenario.Given</td></tr>
-                        <tr><td>Then - @scenario.Then</td></tr>
-                        <tr><td>When - @scenario.When</td></tr>
+                {                      
+                        
+                       <td>  Description - @scenario.Description 
+                        <br />Given - @scenario.Given
+                        <br />Then - @scenario.Then
+                        <br />When - @scenario.When
+                        </td>
                       
                 }
-            </td></tr>
+                </tr>
+                
+            
             }
         </table>
     }
