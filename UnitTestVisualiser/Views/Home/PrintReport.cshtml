@@ -6,39 +6,40 @@
     {
         <br />
         
-        <h3>Class - @item.ClassName </h3>
-        @item.ClassDescription
+        <h4>Class - @item.ClassName </h4>
+       
 
-        <br />
         
         
-        <br />
-        <table cellpadding="3" cellspacing="3" >
-            
+       
+        <table cellpadding="3" cellspacing="3" style='font-family:Arial;font-size:9pt;' >
+              <tr><td>&nbsp;</td> </tr>
             @foreach (ClassTest test in item.Tests)
             {
-                <tr border = "1" bgcolor="BCB7B7" color="#ffffff">
-                 <td><h3>Test - @test.Title</h3></td>
+                <tr border = "1" bgcolor="3333aa" color="#ffffff">
+                 <td><h4><b>Test Title</b> - @test.Title</h4></td>
                 </tr> 
                 
-                <tr border ="1" bgcolor = "#EEFFFF">
+                <tr border ="1" bgcolor = "#DDEEEE">
                 <td>
-                    Test Description - @test.Description
+                    <b>Test Description:</b> @test.Description
                 </td>
+                </tr>
                 
-                
-             @foreach (TestScenarion scenario in test.Scenarios)
+             foreach (TestScenarion scenario in test.Scenarios)
              {                      
                      <tr border = "1" bgcolor = "#DDEEEE">
-                       <td>  Description - @scenario.Description 
-                        <br />Given - @scenario.Given
-                        <br />Then - @scenario.Then
-                        <br />When - @scenario.When
-                        </td>
-                      </tr>
+                       <td>  <b> Scenario:</b> @scenario.Description 
+                        <br /><b>Given - </b> @scenario.Given                        
+                        <br /><b>When - </b> @scenario.When
+                        <br /><b>Then - </b> @scenario.Then
+                        </td></tr>
+                      
+                 <tr><td>&nbsp;</td> </tr>
+                <tr><td>&nbsp;</td> </tr>
                       
              }
-             </tr>
+
 
             }
 
