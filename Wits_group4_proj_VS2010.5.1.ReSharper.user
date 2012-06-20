@@ -19,51 +19,56 @@
       <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:AtmCard.cs" caret="0" fromTop="0" />
       <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:AtmMachine.cs" caret="0" fromTop="0" />
       <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:Account.cs" caret="535" fromTop="24" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:Window.coffee" caret="497" fromTop="21" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="0" fromTop="0" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="2172" fromTop="24" />
       <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/f:AtmMachineTest.cs" caret="2406" fromTop="72" />
       <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:Helpers/f:IScenario.cs" caret="326" fromTop="16" />
       <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:AtmMachine/d:Test - Check Balance/f:blance_0_for_new_account.cs" caret="400" fromTop="5" />
       <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:AtmMachine/d:Test - Insert Card/f:can_insert_card.cs" caret="1472" fromTop="21" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="0" fromTop="0" />
       <File id="DC0EE36F-949F-40F2-A451-56BBF6767081/f:Customer.cs" caret="285" fromTop="15" />
       <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:Account/d:Test - Credit Acc/f:can_credit_acc.cs" caret="297" fromTop="7" />
       <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:Account/d:Test - Credit Acc/f:Test - Credit Account.yaml" caret="46" fromTop="1" />
       <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="1150" fromTop="13" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Controllers/f:HomeController.cs" caret="467" fromTop="23" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Controllers/f:HomeController.cs" caret="339" fromTop="15" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:ClassDiagram.coffee" caret="0" fromTop="0" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:Window.coffee" caret="298" fromTop="11" />
+      <File id="DF00196A-3B96-4BCD-8C4E-879DB8EDFE95/f:PrintHeaderFooter.cs" caret="597" fromTop="22" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="2395" fromTop="27" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/f:Site.css" caret="1612" fromTop="25" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Scripts/f:jquery.cookie.js" caret="3980" fromTop="36" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Scripts/f:jquery.treeview.js" caret="10484" fromTop="57" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Scripts/f:jquery.treeview.edit.js" caret="1780" fromTop="36" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="1953" fromTop="29" />
     </RecentFiles>
     <RecentEdits>
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="2038" fromTop="8" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="392" fromTop="30" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="3298" fromTop="23" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="1339" fromTop="10" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="3298" fromTop="24" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="3294" fromTop="48" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="0" fromTop="0" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="769" fromTop="18" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="769" fromTop="18" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="687" fromTop="18" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="1242" fromTop="20" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="392" fromTop="7" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="1726" fromTop="18" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="1126" fromTop="10" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="601" fromTop="4" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="762" fromTop="19" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="2394" fromTop="30" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="2894" fromTop="39" />
-      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="2172" fromTop="24" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="1508" fromTop="22" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="2496" fromTop="31" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="2758" fromTop="36" />
-      <File id="5276CCB8-4FF6-45D0-9E1A-B1D0EB656F00/d:ClassesUnderTest/d:Account/d:Test - Credit Acc/f:Test - Credit Account.yaml" caret="5" fromTop="0" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="1254" fromTop="7" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="2519" fromTop="31" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="2481" fromTop="30" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="1170" fromTop="17" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="3839" fromTop="37" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="4651" fromTop="18" />
-      <File id="AA7CB2F3-A5B3-421D-B447-B8861EB502B3/f:UtReflector.cs" caret="6155" fromTop="41" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="2457" fromTop="3" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/f:Site.css" caret="1281" fromTop="26" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="2159" fromTop="13" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="2159" fromTop="26" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="2159" fromTop="30" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="2159" fromTop="34" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="2159" fromTop="29" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="2159" fromTop="15" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="2538" fromTop="2" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/f:Site.css" caret="1257" fromTop="13" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/f:Site.css" caret="1715" fromTop="36" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/f:Site.css" caret="1298" fromTop="11" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="1824" fromTop="25" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="3864" fromTop="10" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="2088" fromTop="24" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="2219" fromTop="28" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="4115" fromTop="22" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="3457" fromTop="23" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:Window.coffee" caret="461" fromTop="16" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/d:Coffee/f:Window.coffee" caret="298" fromTop="11" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="910" fromTop="6" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Home/f:Index.cshtml" caret="2395" fromTop="27" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/f:Site.css" caret="1439" fromTop="15" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Content/f:Site.css" caret="1612" fromTop="25" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="506" fromTop="14" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Scripts/f:jquery.cookie.js" caret="3980" fromTop="36" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Scripts/f:jquery.treeview.js" caret="10484" fromTop="18" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Scripts/f:jquery.treeview.edit.js" caret="1780" fromTop="36" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="1664" fromTop="22" />
+      <File id="F1F86F03-33F1-450D-B45E-6B7EBA9AF73C/d:Views/d:Shared/f:_Layout.cshtml" caret="1126" fromTop="15" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

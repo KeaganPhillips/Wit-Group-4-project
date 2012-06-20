@@ -53,7 +53,7 @@
             <td class='cellDetail' id='lblWhen' ></td>
         </tr>
         <tr>
-            <td class='cellTitle' >Then</td>
+            <td class='cellTitle'  >Then</td>
             <td class='cellDetail' id='lblThen' ></td>
         </tr>
     </table>
@@ -74,7 +74,7 @@
 
         itemString += "<li><span class='folder'>Root</span><ul>";
         for (i = 0; i < data.length; i++) {
-            itemString += "<li><span class='folder'>Test - " + data[i].Title + "</span>";
+            itemString += "<li><img src='Content/images/testing_icon.gif' /><span class='folder'>Test - " + data[i].Title + "</span>";
 
             var s = 0;
             for (s = 0; s < data[i].Scenarios.length; s++) {
@@ -85,7 +85,7 @@
                 var when = data[i].Scenarios[s].When;
                 var then = data[i].Scenarios[s].Then;
 
-                itemString += "<ul><li><span class='folder'><a href='javascript:populateDetails(\"" + given + "\",\"" + testTitle + "\",\"" + testDesc + "\",\"" + scenario + "\",\"" + when + "\",\"" + then +"\")'>Scenario: " + data[i].Scenarios[s].Description + "</a></span></li></ul>";
+                itemString += '<ul><li><span class="folder"><img src="Content/images/news_answer.gif" /><a href="javascript:populateDetails(\'' + given + '\',\'' + testTitle + '\',\'' + testDesc + '\',\'' + scenario + '\',\'' + when + '\',\'' + then + '\')" style="text-decoration:none">Scenario: ' + data[i].Scenarios[s].Description + '</a></span></li></ul>';
             }
             itemString += "</li>"
         }
@@ -93,6 +93,7 @@
         $('#browser li').remove();
         var branches = $(itemString).appendTo('#browser');
         $("#browser").treeview({
+            control: "#treecontrol", 
             add: branches
         });
 

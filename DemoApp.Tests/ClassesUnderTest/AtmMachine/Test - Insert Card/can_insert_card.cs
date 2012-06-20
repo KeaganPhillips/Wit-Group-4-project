@@ -60,7 +60,7 @@ namespace DemoApp.Tests.ClassesUnderTest.AtmMachine.Test___Insert_Card
 
         #region Then
         [TestMethod]
-        [ThenDescription(@"ATM status is 'Card Inserted'")]
+        [ThenDescription(@"ATM status is: Card Inserted")]
         public void atm_status_is_card_inserted()
         {
             Assert.IsTrue(_atmMachine.CardInserted);
