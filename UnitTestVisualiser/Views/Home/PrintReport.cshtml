@@ -18,10 +18,10 @@
             @foreach (ClassTest test in item.Tests)
             {
                 <tr border = "1" bgcolor="BCB7B7" color="#ffffff">
-                 <td>Test - @test.Title</td>
+                 <td><h3>Test - @test.Title</h3></td>
                 </tr> 
                 
-                <tr border ="1">
+                <tr border ="1" bgcolor = "#EEFFFF">
                 <td>
                     Test Description - @test.Description
                 </td>
@@ -29,7 +29,7 @@
                 
              @foreach (TestScenarion scenario in test.Scenarios)
              {                      
-                     <tr border = "1">
+                     <tr border = "1" bgcolor = "#DDEEEE">
                        <td>  Description - @scenario.Description 
                         <br />Given - @scenario.Given
                         <br />Then - @scenario.Then
