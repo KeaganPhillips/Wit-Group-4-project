@@ -5,26 +5,32 @@ using System.Linq;
 using DemoApp.Tests.Helpers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace DemoApp.Tests.ClassesUnderTest.Account.Test___Credit_Acc
+namespace DemoApp.Tests.ClassesUnderTest.Customer.Test___Withdraw_Cash
 {
     [TestClass]
-    [TestName("Credit Account Test")]
-    public class can_credit_acc:IScenario
+    [TestName("Can Withdraw Cash")]
+    public class can_withdraw_cash : IScenario
     {
+        [TestInitialize]
+        public void Setup()
+        {
+            TestHelper.SetupTest(this);
+        }
+
         public Type ClassUnderTest
         {
-            get { return typeof(DemoApp.Account); }
+            get { return typeof (DemoApp.Customer); }
         }
 
         public string SecnarionDescription
         {
-            get { return "The account can be credited"; }
+            get { return  "The customer can withdraw cash from the ATM"; }
         }
 
         #region Given
         public string GivenDescription
         {
-            get { return "We have a valid open account with R100.00 balance"; }
+            get { return "The we have a valid Customer, ATM machine and Bank Card. "; }
         }
 
         public void Given()
@@ -36,22 +42,21 @@ namespace DemoApp.Tests.ClassesUnderTest.Account.Test___Credit_Acc
         #region When
         public string WhenDescription
         {
-            get { return "We credit the account with R550.00"; }
+            get { return "The Customer insert his card, enter his pin and withdraws cash."; }
         }
 
         public void When()
         {
             throw new NotImplementedException();
         }
-        #endregion 
+        #endregion
 
         #region Then
         [TestMethod]
-        [ThenDescription(@"The blance should be R650.00")]
-        public void Then()
+        [ThenDescription(@"The ATM status is Card Inserted")]
+        public void TestMethod1()
         {
-            Assert.Fail();
         }
-        #endregion 
+        #endregion
     }
 }

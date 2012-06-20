@@ -11,5 +11,15 @@ namespace DemoApp
         {
             get { throw new NotImplementedException(); }
         }
+
+        public decimal CashInPocket
+        {
+            get { throw new NotImplementedException(); }
+        }
+
+        public void DrawCash(decimal amount)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
