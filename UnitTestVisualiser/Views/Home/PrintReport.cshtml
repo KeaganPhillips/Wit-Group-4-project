@@ -21,25 +21,27 @@
                  <td>Test - @test.Title</td>
                 </tr> 
                 
-                <tr border ="1"><td>
-                @test.Description
-                </td></tr>
+                <tr border ="1">
+                <td>
+                    Test Description - @test.Description
+                </td>
                 
-                <tr >            
-                @foreach (TestScenarion scenario in test.Scenarios)
-                {                      
-                        
+                
+             @foreach (TestScenarion scenario in test.Scenarios)
+             {                      
+                     <tr border = "1">
                        <td>  Description - @scenario.Description 
                         <br />Given - @scenario.Given
                         <br />Then - @scenario.Then
                         <br />When - @scenario.When
                         </td>
+                      </tr>
                       
-                }
-                </tr>
-                
-            
+             }
+             </tr>
+
             }
+
         </table>
     }
      

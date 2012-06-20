@@ -49,22 +49,10 @@ namespace UnitTestVisualiser.Controllers
         public ActionResult PrintItems()
         {
             var data = UtReflector.Get();
-            return this.ViewPdf("Items report", "PrintReport", data);
+            return this.ViewPdf("Test Scenario Report", "PrintReport", data);
            // return this.ViewPdf("Items report", "PrintReport", CreateItemsList());
         }
 
-        private ItemstoDisplayList CreateItemsList()
-        {
-            return new ItemstoDisplayList()
-                {
-                    new Item { Id = 1, Name = "Patrick", Address = "Geuzenstraat 29", Place = "Amsterdam" },
-                    new Item { Id = 2, Name = "Fred", Address = "Flink 9a", Place = "Rotterdam" },                    
-                    new Item { Id = 21, Name = "Schimmelmann", Address = "Ritzema Bosstraat 28-2", Place = "Vierenman" },
-                    new Item { Id = 22, Name = "Makhlouf", Address = "Ln vd Helende Meesters 12", Place = "Eindhoven" },
-                    new Item { Id = 23, Name = "Meyer", Address = "Burgemeester v Leeuwenln 79H", Place = "Breda" },
-                    
-                   
-                };
-        }
+        
     }
 }
