@@ -1,0 +1,12 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Overview}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Document Scope}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Assumptions Made}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Organising Tests}{}% 5
+\BOOKMARK [2][-]{subsection.2.1}{Folder structure}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{Test Scenarios}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Given When Then}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{IScenario Interface}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.3}{The TestName Attribute}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.4}{The TestHelper}{section.3}% 11
+\BOOKMARK [1][-]{section.4}{Conclusion}{}% 12
