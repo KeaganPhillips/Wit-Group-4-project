@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Specification selection}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Proposed Solution}{3}{subsection.1.2}
+\contentsline {section}{\numberline {2}Role and Responsibilities}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Quality}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Mentorship}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Delivery}{4}{subsection.2.3}
+\contentsline {section}{\numberline {3}Individual Contribution}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}Core System Under Test}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Core System Unit Tests}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Unit Test Reflector}{5}{subsection.3.3}
+\contentsline {section}{\numberline {4}Methodologies and Approach}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Project Management}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Development Methodology}{7}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Source Control}{7}{subsection.4.3}
+\contentsline {section}{\numberline {5}Conclusion}{7}{section.5}
