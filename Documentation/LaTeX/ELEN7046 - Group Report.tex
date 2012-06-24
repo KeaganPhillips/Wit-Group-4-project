@@ -134,8 +134,51 @@ This component acts as a shell to host our solution in a web based environment. 
 \linebreak  
 See Borelli’s report for more information.\cite{boreli}
 
+\subsubsection{HTML5 / Javascript Component}
+This is the front end component responsible for the actual user interface, the layout and presentation logic. It sends an HTTP request to the 'Asp.Net Web App' component and expect a JSON\cite{json} structure back. The data retrieved from the web server is then bound to the user interface giving the user a visual representation of the unit tests.\\
+\linebreak
+Please refer to Selo's\cite{selo} and Demi's\cite{demi} individual reports for more regarding this component.
+
+\subsection{Screen Layout}
+The main screen is segregated into three main sections. We will now briefly describe these section. The Figure \ref{fig2} is a 'mock-up' representation of the proposed screen. 
+
+
+\begin{center}
+	\begin{figure}
+		\includegraphics{screenmock.JPG}
+			\caption{}
+			\label{fig2}    
+	\end{figure}	
+\end{center}
+
+
+\subsubsection{Class diagram canvas}
+The \textbf{Class diagram canvas} represents the top half section in Figure \ref{fig2}. This section will display interactive movable lightweight class diagrams. One class diagram will get created for each class being tested. The class diagrams must be selected. The selected class must be highlighted to distinguish it from other classes.\\
+\linebreak 
+See Sello’s\cite{sello} report for more information on the implementation of this screen.
+
+\subsubsection{Treeview panel}
+The \textbf{Treeview Panel} is represented on the bottom left section in Figure \ref{fig2}. This section will be empty initially and will only populate when the user selects a class diagram. The main purpose of this section is to present to the user a tree view control listing all the tests for the selected class and each test's related test scenarios. This panel will refresh with new content when the user selects another class from the class diagram canvas.\\
+\linebreak
+See Demi’s\cite{demi} report for more information related to this screen.
+
+\subsubsection{Details view panel}
+The \textbf{Details view panel} is represented on the bottom right section of Figure \ref{fig2}. The panel will initially be blank and will only populate when the user select a scenario from the tree view control. It will display data related to the scenario selected (i.e. the Given / When / Then details) amongst other details including the class name; class description; and other test related details\\
+\linebreak
+See Demi’s\cite{demi} report for more information related to this screen.
+
 \section{Installation Procedure}
 blah.. blah...
+
+
+
+
+
+
+
+
+
+
 
 
 \clearpage

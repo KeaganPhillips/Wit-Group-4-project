@@ -34,7 +34,7 @@
     x=77
     y=80
     $.get '/home/GetTestData/', (all_classes) ->
-
+	  console.log all_classes
       diagrams = []
       for class_data in all_classes	    
         classDiagram = new ClassDiagram(x, y, class_data, unselect_all_diagrams, diagram_selected)
