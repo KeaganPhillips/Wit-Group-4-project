@@ -1,6 +1,6 @@
 ﻿namespace UnitTestReflector.Core
 {
-    public class TestScenarion
+    public class TestScenario
     {
         public string Description { get; set; }
         public string Given { get; set; }

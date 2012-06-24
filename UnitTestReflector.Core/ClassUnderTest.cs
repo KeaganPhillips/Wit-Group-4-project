@@ -12,6 +12,6 @@ namespace UnitTestReflector.Core
         public string ClassDescription { get; set; }
         public IList<string> PublicMethods { get; set; }
         public IList<string> PublicProperties { get; set; }
-        public IList<ClassTest> Tests { get; set; }
+        public IList<Test> Tests { get; set; }
     }
 }

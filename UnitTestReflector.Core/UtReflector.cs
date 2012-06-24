@@ -88,9 +88,9 @@ namespace UnitTestReflector.Core
         }
 
         
-        private static IList<ClassTest> getTests(Type concreteClass, IEnumerable<IScenario> testScenarios, IDictionary<string, string> testDescriptions)
+        private static IList<Test> getTests(Type concreteClass, IEnumerable<IScenario> testScenarios, IDictionary<string, string> testDescriptions)
         {
-            var lst = new List<ClassTest>();
+            var lst = new List<Test>();
 
             var tests =
                 testScenarios
@@ -108,7 +108,7 @@ namespace UnitTestReflector.Core
             return lst;
         }
 
-        private static ClassTest getSingleTest(string testName, Type concreteClass, IList<IScenario> scenarios, IDictionary<string, string> testDescriptions)
+        private static Test getSingleTest(string testName, Type concreteClass, IList<IScenario> scenarios, IDictionary<string, string> testDescriptions)
         {
             var testScenarions =
                 scenarios
@@ -121,7 +121,7 @@ namespace UnitTestReflector.Core
                                    return obj.TestName == testName;
                                })
                     .ToList()
-                    .Select(a => new TestScenarion()
+                    .Select(a => new TestScenario()
                                      {
                                          Given = a.GivenDescription,
                                          When = a.WhenDescription,
@@ -131,7 +131,7 @@ namespace UnitTestReflector.Core
                                      });
 
 
-            return new ClassTest()
+            return new Test()
                        {
                            Title = testName,
                            Description = testDescriptions.ContainsKey(testName) ? testDescriptions[testName] : string.Empty,
