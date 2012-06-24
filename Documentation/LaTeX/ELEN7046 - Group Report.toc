@@ -3,5 +3,11 @@
 \contentsline {subsection}{\numberline {2.1}Overview}{4}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Components used and their license agreements}{4}{subsection.2.2}
 \contentsline {section}{\numberline {3}Problem Description}{4}{section.3}
-\contentsline {section}{\numberline {4}Approach}{4}{section.4}
-\contentsline {section}{\numberline {5}Installation Procedure}{4}{section.5}
+\contentsline {subsection}{\numberline {3.1}Overview}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Problems with respect to Unit Tests}{5}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Large Complex projects}{5}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Comments in tests}{5}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}The Learning Curve}{5}{subsubsection.3.2.3}
+\contentsline {subsection}{\numberline {3.3}Proposed Solution}{5}{subsection.3.3}
+\contentsline {section}{\numberline {4}Approach}{6}{section.4}
+\contentsline {section}{\numberline {5}Installation Procedure}{6}{section.5}

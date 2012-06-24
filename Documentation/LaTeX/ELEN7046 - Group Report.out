@@ -3,5 +3,11 @@
 \BOOKMARK [2][-]{subsection.2.1}{Overview}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Components used and their license agreements}{section.2}% 4
 \BOOKMARK [1][-]{section.3}{Problem Description}{}% 5
-\BOOKMARK [1][-]{section.4}{Approach}{}% 6
-\BOOKMARK [1][-]{section.5}{Installation Procedure}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Overview}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Problems with respect to Unit Tests}{section.3}% 7
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Large Complex projects}{subsection.3.2}% 8
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Comments in tests}{subsection.3.2}% 9
+\BOOKMARK [3][-]{subsubsection.3.2.3}{The Learning Curve}{subsection.3.2}% 10
+\BOOKMARK [2][-]{subsection.3.3}{Proposed Solution}{section.3}% 11
+\BOOKMARK [1][-]{section.4}{Approach}{}% 12
+\BOOKMARK [1][-]{section.5}{Installation Procedure}{}% 13

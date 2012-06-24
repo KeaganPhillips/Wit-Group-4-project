@@ -71,13 +71,30 @@ The following lists the components used within the system together with their re
 \item \textbf{Java script:} GNU GPL\cite{gnugpl}
 \item \textbf{JQuery:} GNU GPL\cite{gnugpl}
 \item \textbf{Kinetic.js:} GNU GPL\cite{gnugpl}
-\item Boreli's report?
+\item \textbf{PDF reporting tool:} CPOL\cite{cpol}
+\item \textbf{ITextSharp:} GNU GPL\cite{gnugpl}
 \end{itemize}
 
 For the complete reference, please refer to the document 'ELEN7046 - Group4 - Licence Agreement.pdf'\cite{licenceDoc}
 
 \section{Problem Description}
-blah.. blah...
+\subsection{Overview}
+As good software practitioners, we always aspire to adopt the current best practices in our industry. In recent years the so called 'Agile' methodologies has become very popular with TDD\cite{tdd} (Test Driven Development) begin a very widely adopted agile practice. Today it is almost expected of developers to not only write program code, but also create automated unit tests and apply other TDD practices.
+\subsection{Problems with respect to Unit Tests}
+Writing automated unit tests comes with its own unique problems. Our project attempts to address some of these shortcomings by proposing a framework against which developers can write their automated tests. The end result should give developers a broad and high level view of all unit tests, making it easier for them to get a holistic view of all the unit tests in the system under test.
+\subsubsection{Large Complex projects}
+Tests can become difficult to read and understand especially as the suite of tests rapidly grows in number and complexity with each build deployed. It is very easy for a developer to get lost in the detail by reading the actual automated test code. This is because the developer can only view one automated unit test at a time, making it difficult to see the whole picture. 
+\subsubsection{Comments in tests}
+Many developers don't write adequate comments in their tests leaving other team members in the dark with regard to what their initial intent was.\\
+\linebreak
+It's never good to have a test or group of tests that isn't well understood (even though the test(s) may pass). Tests are only useful when the context of the tests is clear and well understood.  
+\subsubsection{The Learning Curve}
+The above described scenarios make it difficult for the development team to evolve a system over time. The result being that the learning curve is often very steep for new developers joining the development team as well as for junior developers on the team.
+\subsection{Proposed Solution}
+What is needed is a framework that provides a convention that developers can follow where tests are written in a uniformed way. The system must provide a mechanism to visually display all tests without the developer having to zoom into the code to look at tests one at a time.\\
+\linebreak
+This, we believe should add tremendous value with respect to the learning of an existing and evolving code base.
+
 
 \section{Approach}
 blah.. blah...
@@ -94,9 +111,9 @@ blah.. blah...
 \bibitem{licenceDoc} License Agreement  \url{https://github.com/KeaganPhillips/Wit-Group-4-project/tree/master/Documentation/}
 \bibitem{mit} \url{http://www.opensource.org/licenses/mit-license.html}
 \bibitem{gnugpl} \url{http://www.gnu.org/copyleft/gpl.html}
+\bibitem{cpol} \url{http://www.codeproject.com/info/cpol10.aspx}
+\bibitem{tdd} \url{http://www.agiledata.org/essays/tdd.html}
 
-
-\bibitem{a} b \url{}
 \end{thebibliography}
 
  
