@@ -7,6 +7,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DemoApp.Tests.ClassesUnderTest.Customer.Test___Withdraw_Cash
 {
+    
     [TestClass]
     [TestName("Can Withdraw Cash")]
     public class can_withdraw_cash : IScenario
@@ -59,4 +60,5 @@ namespace DemoApp.Tests.ClassesUnderTest.Customer.Test___Withdraw_Cash
         }
         #endregion
     }
+    
 }
