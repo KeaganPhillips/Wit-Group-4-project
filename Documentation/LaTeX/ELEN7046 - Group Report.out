@@ -10,4 +10,9 @@
 \BOOKMARK [3][-]{subsubsection.3.2.3}{The Learning Curve}{subsection.3.2}% 10
 \BOOKMARK [2][-]{subsection.3.3}{Proposed Solution}{section.3}% 11
 \BOOKMARK [1][-]{section.4}{Approach}{}% 12
-\BOOKMARK [1][-]{section.5}{Installation Procedure}{}% 13
+\BOOKMARK [2][-]{subsection.4.1}{High level design overview}{section.4}% 13
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Core System Under Development}{subsection.4.1}% 14
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Core System Unit Tests}{subsection.4.1}% 15
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Unit Test Reflector}{subsection.4.1}% 16
+\BOOKMARK [3][-]{subsubsection.4.1.4}{Asp.Net Web Application}{subsection.4.1}% 17
+\BOOKMARK [1][-]{section.5}{Installation Procedure}{}% 18

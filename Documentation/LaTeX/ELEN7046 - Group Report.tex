@@ -97,7 +97,42 @@ This, we believe should add tremendous value with respect to the learning of an 
 
 
 \section{Approach}
-blah.. blah...
+Given the above stated requirement, the team proposed the following solution. A web application will be developed that provides a visual representation of the unit tests of the system under development
+
+\subsection{High level design overview}
+Figure \ref{fig1} depicts a high level overview of the proposed solution. This section will briefly discuss the key components of the system from right to left.
+
+\begin{center}
+	\begin{figure}
+		\includegraphics{system_overview.JPG}
+			\caption{}
+			\label{fig1}    
+	\end{figure}	
+\end{center}
+
+\subsubsection{Core System Under Development}
+This component represents the actual core application. This is the system that will actually run in the production environment and the application against which the unit tests will run. This system is completely oblivious of the other components depicted. Obviously developers must use an "interface driven" approach upon developing this component to facilitate modularity and enable for easy unit testing. The actual functional requirements for this application is beyond the scope of the project.\\
+\linebreak
+Please see section 3.1 of Keagan Phillips's individual report\cite{reportKeagan} for more a more in depth discussion regarding this component. 
+
+\subsubsection{Core System Unit Tests}
+This component represents the actual unit test project and contains automated unit tests. These tests target the "Core System Under Development" component.\\
+\linebreak  
+Tests must be written following a predefined convention\cite{UTconvention}. The development team used the TDD\cite{tdd} (Test Driven Development) technique and "Given / When / Then"\cite{gwt} convention for specifying tests scenarios.\\
+\linebreak  
+Please refer to section 3.2 of Keagan Phillips's individual report\cite{reportKeagan} for more detail on this component.\\
+\linebreak  
+Please see the "Unit Test coding convention" document for an in depth discussion on how to wire automated tests using the provided framework.\cite{UTconvention}
+
+\subsubsection{Unit Test Reflector}
+This component's responsibility is to extract the unit test metadata embedded in the "Core System Unit Tests" component and transform that data into a C\# data structure. The team made use of the Microsoft Dot Net Framework's Reflection\cite{reflection} feature to achieve this goal. This data can then be collated and presented to the user in almost any format including document format (i.e. HTML page or PDF) or in our case visually and in pdf format as shown later on.\\
+\linebreak  
+Please refer to section 3.3 of Keagan Phillips's individual report\cite{reportKeagan} for more detail on this component.\\ 
+
+\subsubsection{Asp.Net Web Application}
+This component acts as a shell to host our solution in a web based environment. It calls the component 'Unit Test Reflector Application' upon receiving a web request. It then retrieves a data structure with the relevant test metadata. The data is then converted from a dot Net C\# object, to a JSON\cite{json} data structure to be transmitted back to the browser as an HTTP response.\\
+\linebreak  
+See Borelli’s report for more information.\cite{boreli}
 
 \section{Installation Procedure}
 blah.. blah...
@@ -108,15 +143,38 @@ blah.. blah...
 \bibitem{unitTests} \url{http://www.extremeprogramming.org/rules/unittests.html}
 \bibitem{xp} \url{http://www.extremeprogramming.org/}
 \bibitem{bds} \url{http://www.opensource.org/licenses/BSD-3-Clause}
-\bibitem{licenceDoc} License Agreement  \url{https://github.com/KeaganPhillips/Wit-Group-4-project/tree/master/Documentation/}
+\bibitem{licenceDoc}  \begin{flushleft}
+For the Group Project License Agreement see: 
+\end{flushleft} \url{https://github.com/KeaganPhillips/Wit-Group-4-project/tree/master/Documentation/}
 \bibitem{mit} \url{http://www.opensource.org/licenses/mit-license.html}
 \bibitem{gnugpl} \url{http://www.gnu.org/copyleft/gpl.html}
 \bibitem{cpol} \url{http://www.codeproject.com/info/cpol10.aspx}
 \bibitem{tdd} \url{http://www.agiledata.org/essays/tdd.html}
+\bibitem{reportKeagan} \begin{flushleft}
+For Keagan Phillips's Individual Report see: 
+\end{flushleft}\url{https://github.com/KeaganPhillips/Wit-Group-4-project/blob/8fe27d49f80fb3be2ed421e3bf7ce8daff002794/Documentation/Individual%20Reports/Individual%20Report%20-%20Keagan%20Phillips.pdf?raw=true}
+
+\bibitem{UTconvention} \begin{flushleft}
+For the Unit Test Coding Convention see:
+\end{flushleft} \url{https://github.com/KeaganPhillips/Wit-Group-4-project/tree/master/Documentation/}
+
+\bibitem{gwt} \begin{flushleft}
+Structuring your test using Given/When/Then
+\end{flushleft} \url{http://testedobjects.sourceforge.net/m2-site/main/documentation/docbkx/html/user-guide/ch03s04.html}
+
+\bibitem{reflection} \url{http://msdn.microsoft.com/en-us/library/ms173183%28v=vs.80%29.aspx}
+
+
+\bibitem{json} \begin{flushleft}
+JSON (JavaScript Object Notation)
+\end{flushleft} \url{http://www.json.org/}
+
+\bibitem{boreli} \begin{flushleft}
+For Boreli's Individual Report see:   
+\end{flushleft} \url{https://github.com/KeaganPhillips/Wit-Group-4-project/tree/master/Documentation/}
+
 
 \end{thebibliography}
-
- 
 
 
 \end{document}

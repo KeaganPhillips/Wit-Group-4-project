@@ -10,4 +10,9 @@
 \contentsline {subsubsection}{\numberline {3.2.3}The Learning Curve}{5}{subsubsection.3.2.3}
 \contentsline {subsection}{\numberline {3.3}Proposed Solution}{5}{subsection.3.3}
 \contentsline {section}{\numberline {4}Approach}{6}{section.4}
-\contentsline {section}{\numberline {5}Installation Procedure}{6}{section.5}
+\contentsline {subsection}{\numberline {4.1}High level design overview}{6}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Core System Under Development}{6}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Core System Unit Tests}{7}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}Unit Test Reflector}{7}{subsubsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.4}Asp.Net Web Application}{7}{subsubsection.4.1.4}
+\contentsline {section}{\numberline {5}Installation Procedure}{8}{section.5}
