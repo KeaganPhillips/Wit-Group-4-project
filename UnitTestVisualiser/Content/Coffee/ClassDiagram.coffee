@@ -9,6 +9,7 @@
     @current_y = @base_y
     @props = data.PublicProperties
     @jsonData = data
+    console.log data
 
   get_Layer: =>
     @classGroup = new Kinetic.Group({draggable: true})

@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {section}{\numberline {2}Individual Contribution}{3}{section.2}
+\contentsline {section}{\numberline {3}Methodologies and Approach}{4}{section.3}
+\contentsline {section}{\numberline {4}Technologies Utilised}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}CoffeeScript}{5}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}HTML5}{7}{subsection.4.2}
+\contentsline {section}{\numberline {5}Conclusion}{8}{section.5}
